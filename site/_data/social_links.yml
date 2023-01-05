@@ -1,0 +1,8 @@
+#-------------------------------
+# Social Links
+# Example of adding a new link to the footer - {icon: "ion-logo-facebook", link: "https://facebook.com"}
+# Other icons can be found at https://ionicons.com/v4/
+social:
+- {icon: "Twitter", link: "https://twitter.com/originalnicodr"}
+- {icon: "Github", link: "https://github.com/originalnicodr"}
+- {icon: "Linkedin", link: "https://www.linkedin.com/in/nicol%C3%A1s-uriel-navall-b38022174/"}

@@ -1,0 +1,14 @@
+---
+---
+
+{% bookshop_scss %}
+
+.about-photo {
+    border-radius: var(--size-300);
+  }
+  
+.about-photo {
+    float: right;
+    width: 40%;
+    margin: 10px 0 0 18px;
+}
