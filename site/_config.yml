@@ -39,6 +39,9 @@ collections:
   posts:
     output: true
     permalink: /blog/:slug
+  reviews:
+    output: true
+    permalink: /el-corgi-pretencioso/:slug
 
 cloudcannon:
   collections:
@@ -85,6 +88,10 @@ defaults:
       type: posts
     values:
       layout: post
+  - scope:
+      type: reviews
+    values:
+      layout: review
 
 #sass:
 #  sass_dir: _sass
