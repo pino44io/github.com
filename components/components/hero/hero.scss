@@ -64,9 +64,12 @@
 			order: -1;
 
 			#{$c}__image {
-				width: 100%;
+				width: 50%;
 				height: 380px;
 				margin-bottom: 40px;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
 
 				&::before {
 					border-radius: 30px;
@@ -82,6 +85,10 @@
 			#{$c}__image {
 				height: 280px;
 				margin-bottom: 32px;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				width: 50%;
 
 				&::before {
 					border-radius: 16px;
