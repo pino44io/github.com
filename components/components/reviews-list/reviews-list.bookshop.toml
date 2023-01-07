@@ -1,0 +1,9 @@
+[component]
+structures = [ "content_blocks" ]
+label = "Reviews List"
+description = "Lists all of the site's reviews"
+icon = "wysiwyg"
+tags = ["Collections"]
+
+[props]
+show_reviews = true

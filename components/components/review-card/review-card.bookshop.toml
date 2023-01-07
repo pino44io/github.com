@@ -1,0 +1,15 @@
+[component]
+structures = []
+label = "Review Card"
+description = "Review card used for review lists"
+icon = "wysiwyg"
+tags = []
+
+[props.review]
+title = "Hello World"
+image = "https://placekitten.com/100/100"
+url = "/"
+tags = ["one", "two", "three"]
+description = "Lorem Ipsum"
+content = "Lorem Ipsum Donor"
+date = "2018-04-24 15:01:35 +0300"

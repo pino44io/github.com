@@ -1,0 +1,11 @@
+{% if include.show_reviews %}
+<div class="container animate">
+  <div class="row" data-pagebreak="6">
+    {% for review in site.reviews %}
+      {% bookshop review-card review=review %}
+    {% endfor %}
+  </div>
+</div>
+
+{% bookshop_include pagination %}
+{% endif %}

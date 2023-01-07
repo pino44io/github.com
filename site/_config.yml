@@ -85,6 +85,10 @@ defaults:
       type: posts
     values:
       layout: post
+  - scope:
+      type: reviews
+    values:
+      layout: review
 
 #sass:
 #  sass_dir: _sass
