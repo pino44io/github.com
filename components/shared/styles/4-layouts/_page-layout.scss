@@ -63,20 +63,22 @@
 		.reading-time {
 			text-align: right;
 			position: absolute;
-			margin-left: 240px;
-			margin-top: 16px;
+			margin-top: auto;
+			width: 100%;
 			display: inline-block;
 			flex-grow: 1;
 			flex: 1;
+			font-size: 26px;
+			font-weight: bold;
+			align-self: flex-end;
+			padding-right: 40px;
 		
-			@media only screen and (max-width: $tablet) {
-				margin-left: 0px;
-				align-self: flex-end;
+			@media only screen and (max-width: $desktop) {
+				font-size: 22px;
 			}
 		
 			@media only screen and (max-width: $mobile) {
-				margin-left: 0px;
-				align-self: flex-end;
+				font-size: 20px;
 			}
 		}
 	}
@@ -89,6 +91,7 @@
 
 .post-tags {
 	display: flex;
+	margin-top: 10px;
 	
 	.post-tags__tag {
 		position: relative;
@@ -135,9 +138,9 @@
 
 .post__title,
 .page__title {
-	margin: 20px 0;
 	font-size: 58px;
 	line-height: 1.2;
+	margin-bottom: 0;
 
 	@media only screen and (max-width: 1130px) {
 		font-size: 44px;
@@ -160,6 +163,15 @@
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
+	margin-top: 5px;
+
+	@media only screen and (max-width: $tablet) {
+		margin-top: 20px;
+	}
+
+	@media only screen and (max-width: $mobile) {
+		margin-top: 30px;
+	}
 
 	.post__author-image {
 		position: relative;
@@ -195,8 +207,16 @@
 	}
 
 	.post__date {
-		font-size: 12px;
+		font-size: 20px;
 		line-height: 14px;
+
+		@media only screen and (max-width: $tablet) {
+			margin-top: 16px;
+		}
+	
+		@media only screen and (max-width: $mobile) {
+			margin-top: 12px;
+		}
 	}
 }
 

@@ -17,6 +17,11 @@ layout: default
       <div class="col col-6 col-d-12">
         <div class="post__info">
 
+          <div class="post__meta">
+              <time class="post__date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string
+                }}</time>
+          </div>
+
           {% if page.tags.size >= 1 %}
           <div class="post-tags">
             {% for tag in page.tags %}
@@ -26,25 +31,14 @@ layout: default
           {% endif %}
 
 
+
           <h1 class="post__title">{{ page.title | escape }}</h1>
 
           <div class="post__info-footer">
 
-            <div class="post__meta">
-              <div class="post__author-image">
-                <img loading="lazy" src="{{ site.data.author.author_image }}" alt="{{ site.data.author.author_name }}">
-              </div>
-
-              <div class="post__meta-bottom">
-                <div class="post__author">{{ site.data.author.author_name }}</div>
-                <time class="post__date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string
-                  }}</time>
-              </div>
-            </div>
-
             {% include read_time.html %}
 
-        </div>
+          </div>
 
         </div>
       </div>
