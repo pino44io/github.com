@@ -38,6 +38,9 @@
           <span class="{{c}}__date"><time datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date_to_string
               }}</time></span>
         </div>
+
+        {% include read_time.html %}
+
       </div>
 
     </div>

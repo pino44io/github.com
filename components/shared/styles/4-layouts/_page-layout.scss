@@ -54,6 +54,31 @@
 
 	@media only screen and (max-width: $desktop) {
 		margin-left: 0;
+		margin-bottom: 10px;
+	}
+	.post__info-footer {
+		display: flex;
+		flex-direction: column;
+
+		.reading-time {
+			text-align: right;
+			position: absolute;
+			margin-left: 240px;
+			margin-top: 16px;
+			display: inline-block;
+			flex-grow: 1;
+			flex: 1;
+		
+			@media only screen and (max-width: $tablet) {
+				margin-left: 0px;
+				align-self: flex-end;
+			}
+		
+			@media only screen and (max-width: $mobile) {
+				margin-left: 0px;
+				align-self: flex-end;
+			}
+		}
 	}
 }
 
