@@ -3,7 +3,8 @@ date:   2021-09-18 00:00:00
 title:  How we made a high quality image gallery without paying a single dime
 description: A dive into how the poor man's necessity sharpens one's problem solving ability (or how we took advantage of multiple million dollar companies' free services).
 tags:   [software-engineering, virtual-photography]
-image:  '/images/post-1.jpg'
+image:  '/images/blog/post-1.jpg'
+category: blog
 ---
 
 In the last couple of years, I've been getting more involved with virtual photography: the art and practice of photography in virtual environments such as videogames.
