@@ -1,7 +1,8 @@
 /* Page + Post + Project */
 .post-top,
 .page-top {
-	padding: 96px 0 48px;
+	padding: 48px 0 80px;
+
 
 	.row {
 		align-items: center;
@@ -12,11 +13,7 @@
 	}
 
 	@media only screen and (max-width: $tablet) {
-		padding: 40px 0;
-	}
-
-	@media only screen and (max-width: $mobile) {
-		padding: 30px 0;
+		padding: 0 0 30px;
 	}
 }
 
@@ -63,22 +60,23 @@
 		.reading-time {
 			text-align: right;
 			position: absolute;
-			margin-top: auto;
+			padding-bottom: 100px;
 			width: 100%;
 			display: inline-block;
 			flex-grow: 1;
 			flex: 1;
-			font-size: 26px;
+			font-size: 24px;
 			font-weight: bold;
 			align-self: flex-end;
 			padding-right: 40px;
-		
-			@media only screen and (max-width: $desktop) {
-				font-size: 22px;
+
+			@media only screen and (max-width: $tablet) {
+				padding-right: 0px;
 			}
 		
 			@media only screen and (max-width: $mobile) {
 				font-size: 20px;
+				padding-right: 0px;
 			}
 		}
 	}
@@ -214,7 +212,7 @@
 .post,
 .page {
 	max-width: 780px;
-	margin: 0 auto 60px;
+	margin: 0 auto 40px;
 
 	a {
 		font-weight: 500;
@@ -243,7 +241,7 @@
 
 /* Share */
 .post__share {
-	margin: 32px 0 60px;
+	margin: 32px 0 0px;
 
 	.share__head {
 		margin-bottom: 20px;
