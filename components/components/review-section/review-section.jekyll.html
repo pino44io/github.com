@@ -13,7 +13,7 @@
             <div class="section__description">{{ include.description_html }} </div>
           </div>
 
-          {% if include.show_reviews %}
+          {% if include.show_posts %}
           <div class="row">
             {% if site.reviews.size > 0 %}
               {% for review in site.reviews offset:0 limit:3 %}

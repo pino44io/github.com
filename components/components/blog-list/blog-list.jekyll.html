@@ -2,7 +2,7 @@
 <div class="container animate">
   <div class="row" data-pagebreak="6">
     {% for post in site.posts %}
-      {% if post.categories contains 'el-corgi-pretencioso' %}
+      {% if post.categories contains 'blog' %}
         {% bookshop blog-card post=post %}
       {% endif %}
     {% endfor %}
