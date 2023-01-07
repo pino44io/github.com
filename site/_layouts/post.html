@@ -57,12 +57,10 @@ layout: default
 
     {% include share.html %}
 
+    {% include disqus-comments.html %}
+    
   </article>
 </div>
 <!-- end post -->
 
 {% include related-posts.html %}
-
-{% if site.data.general_settings.disqus-identifier %}
-  {% include disqus-comments.html %}
-{% endif %}
