@@ -41,11 +41,11 @@
 
 	@media only screen and (max-width: $desktop) {
 		padding-top: 65%;
-		margin-bottom: 40px;
+		/*margin-bottom: 40px;*/
 	}
 
 	@media only screen and (max-width: $mobile) {
-		margin-bottom: 32px;
+		/*margin-bottom: 32px;*/
 	}
 }
 
@@ -163,15 +163,6 @@
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
-	margin-top: 5px;
-
-	@media only screen and (max-width: $tablet) {
-		margin-top: 20px;
-	}
-
-	@media only screen and (max-width: $mobile) {
-		margin-top: 30px;
-	}
 
 	.post__author-image {
 		position: relative;
