@@ -31,11 +31,6 @@ collections:
   pages:
     output: true
     permalink: /:title/
-  projects:
-    output: true
-    permalink: /project/:slug
-  testimonials:
-    output: false
   posts:
     output: true
     permalink: /:categories/:slug
@@ -44,9 +39,6 @@ cloudcannon:
   collections:
     pages:
       _icon: 'wysiwyg'
-    projects:
-      _icon: 'work_outline'
-      _subtext_key: subtitle
     testimonials:
       _icon: 'format_quote'
       _subtext_key: position
@@ -57,8 +49,6 @@ _collection_groups:
   - heading: Content
     collections:
       - pages
-      - projects
-      - testimonials
   - heading: Blogging
     collections:
       - posts
@@ -77,10 +67,6 @@ defaults:
       path: _pages/index.html
     values:
       permalink: /
-  - scope:
-      type: projects
-    values:
-      layout: project
   - scope:
       type: posts
     values:
