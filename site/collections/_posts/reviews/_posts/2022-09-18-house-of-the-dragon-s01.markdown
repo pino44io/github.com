@@ -1,7 +1,7 @@
 ---
 date:   2021-09-18 00:00:00
 title:  House of the Dragon S01
-tags:   [house-of-the-dragon, serie, partial-spoilers]
+tags:   [house-of-the-dragon, serie, spoilers-parciales]
 image:  '/images/reviews/house_of_the_dragon_s01.jpg'
 category: el-corgi-pretencioso
 ---
