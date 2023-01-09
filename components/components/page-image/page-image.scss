@@ -1,14 +1,14 @@
 .c-page-image {	
 	position: relative;
 	transform: translate(0);
-	padding-top: 56.25%;
-	margin-bottom: 48px;
-	min-height: 280px;
+	/*padding-top: 56.25%;*/
+	/*min-height: 280px;*/
 	border-radius: 16px;
 	overflow: hidden;
-	background: $blue-gray;
+	/*background: $blue-gray;*/
+	margin: 40px 0 0;
 
-	img {
+	.img {
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -19,11 +19,11 @@
 	}
 
 	@media only screen and (max-width: $desktop) {
-		padding-top: 65%;
-		margin-bottom: 40px;
+		/*padding-top: 65%;*/
+		margin: 40px 0 0;
 	}
 
 	@media only screen and (max-width: $mobile) {
-		margin-bottom: 32px;
+		margin: 32px 0 0;
 	}
 }

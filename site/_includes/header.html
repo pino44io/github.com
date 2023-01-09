@@ -5,13 +5,19 @@
       <div class="c-header__inner">
 
         <div class="logo">
-          <a class="logo__link" href="{{ site.baseurl }}/">
-          {%if site.data.navigation.logo_image %}
-            <img class="logo__image" src="{{ site.baseurl }}{{ site.data.navigation.logo_image }}" alt="{{ site.data.general_settings.title }}">
+          {%if page.url contains "el-corgi-pretencioso" %}
+            <a class="logo__link" href="{{ site.baseurl }}/el-corgi-pretencioso">
+              <img class="logo__image" src="{{ site.baseurl }}{{ site.data.navigation.logo_image_review }}" alt="{{ site.data.general_settings.title }}">
+            </a>
+          {%elsif site.data.navigation.logo_image %}
+            <a class="logo__link" href="{{ site.baseurl }}/">
+              <img class="logo__image" src="{{ site.baseurl }}{{ site.data.navigation.logo_image }}" alt="{{ site.data.general_settings.title }}">
+            </a>
           {% else %}
-            {{ site.data.settings.title }}
+            <a class="logo__link" href="{{ site.baseurl }}/">
+              {{ site.data.settings.title }}
+            </a>
           {% endif %}
-          </a>
         </div>
 
         <nav class="main-nav">
