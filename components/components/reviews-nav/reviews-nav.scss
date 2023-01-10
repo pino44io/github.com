@@ -1,0 +1,40 @@
+/* Page Heading */
+.nav-container {
+        max-width: 920px;
+        padding: 0 auto;
+        margin: 0 auto;
+    
+        @media only screen and (max-width: $tablet) {
+            max-width: 600px;
+        }
+    
+        @media only screen and (max-width: $mobile) {
+            font-size: 400px;
+        }
+        
+    .nav-links {
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+
+        margin: 0 40px;
+
+        .nav-link {
+            font-size: 46px;
+            line-height: 1.12;
+
+            @media only screen and (max-width: $desktop) {
+                font-size: 40px;
+            }
+        
+            @media only screen and (max-width: $tablet) {
+                font-size: 30px;
+            }
+        
+            @media only screen and (max-width: $mobile) {
+                font-size: 25px;
+            }
+        }
+    }
+}

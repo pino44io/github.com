@@ -1,0 +1,12 @@
+{% if include.show_posts %}
+<div class="container animate">
+  <div class="row" >
+    {% for post in site.posts %}
+      {% if post.categories contains 'serie' %}
+        {% bookshop blog-card post=post %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+{% endif %}

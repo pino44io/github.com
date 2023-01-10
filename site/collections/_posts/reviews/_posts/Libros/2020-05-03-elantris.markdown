@@ -1,7 +1,7 @@
 ---
 date:   2020-05-03 12:00:00
 title:  "Elantris"
-tags:   [cosmenre]
+tags:   [cosmere]
 image:  '/images/reviews/elantris.jpg'
 category: [el-corgi-pretencioso, libro]
 ---

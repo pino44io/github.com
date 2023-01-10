@@ -1,7 +1,7 @@
 ---
 date:   2021-02-23 12:00:00
 title:  "White Sand trilogy"
-tags:   [comic]
+tags:   [comic, cosmere]
 image:  '/images/reviews/white-sand.jpg'
 category: [el-corgi-pretencioso, libro]
 ---

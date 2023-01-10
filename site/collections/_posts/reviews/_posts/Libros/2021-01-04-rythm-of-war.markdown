@@ -2,6 +2,7 @@
 date:   2021-01-04 12:00:00
 title:  "Rythm of War"
 image:  '/images/reviews/rythm-of-war.jpg'
+tags: [cosmere]
 category: [el-corgi-pretencioso, libro]
 ---
 MAAAAAAAAAAAAAAAAAAAAAAAN como le encanta a sanderson tirar todo al final y hacerte pija emocionalmente.
