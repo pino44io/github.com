@@ -1,0 +1,9 @@
+---
+date:   2020-02-04 12:00:00
+title:  "What if?"
+image:  '/images/reviews/what-if.jpg'
+category: [el-corgi-pretencioso, libro]
+---
+Muy divertido, tiene algunas ecuaciones por si te interesa analizar algunas cosas en más profundidad, pero está muy bien como libro de divulgación científica.
+
+No es que te va a hacer reflexionar sobre tu vida ni nada por el estilo, pero es muy divertido, y creo que en alguien más chico podría despertarle pasión por la ciencia.
