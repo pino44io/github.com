@@ -2,7 +2,7 @@
 date:   2021-09-21 00:00:00
 title:  "Assassin's Creed: Rogue"
 description: Black Flag 1.5.
-tags:   [assasins-creed, juego]
+tags:   [assassin's-creed, juego]
 image:  '/images/reviews/assassins-creed-rogue.png'
 category: el-corgi-pretencioso
 ---

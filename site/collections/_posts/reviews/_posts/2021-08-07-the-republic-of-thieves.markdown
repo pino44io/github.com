@@ -1,11 +1,11 @@
 ---
 date:   2021-08-07 00:00:00
 title:  "The Republic of Thieves"
-tags:   [the gentleman bastards, libro]
+tags:   [the-gentleman-bastards, libro]
 image:  '/images/reviews/the-republic-of-thieves.jpg'
 category: el-corgi-pretencioso
 ---
-Safa.
+Zafa.
 
 Me interesaba ver quien era la chica que estaba con los demás bastardos en el pasado y eso estuvo re piola. Creo que es uno de los mejores personajes femeninos que leí, se sentía muy real y no existía solo como fold para el protagonista. Todo el arco del pasado la verdad que lo re disfrute, aunque se me perdian algunas cosas cuando actuaban por que usaban un inglés medio formal.
 
