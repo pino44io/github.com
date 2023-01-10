@@ -1,5 +1,5 @@
 ---
-date:   2020-10-14 00:00:00
+date:   2020-10-14 12:00:00
 title:  "Gris"
 tags:   [juego]
 image:  '/images/reviews/gris.jpg'

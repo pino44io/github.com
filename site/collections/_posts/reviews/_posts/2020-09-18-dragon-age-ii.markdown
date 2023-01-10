@@ -1,5 +1,5 @@
 ---
-date:   2020-09-18 00:00:00
+date:   2020-09-18 12:00:00
 title:  "Dragon Age II"
 tags:   [dragon-age, juego]
 image:  '/images/reviews/dragon-age-ii.jpg'

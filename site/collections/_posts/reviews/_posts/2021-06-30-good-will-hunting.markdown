@@ -1,5 +1,5 @@
 ---
-date:   2021-06-30 00:00:00
+date:   2021-06-30 12:00:00
 title:  "Good Will Gunting"
 tags:   [pelicula]
 image:  '/images/reviews/good-will-hunting.jpg'

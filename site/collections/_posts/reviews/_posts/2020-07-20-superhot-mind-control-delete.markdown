@@ -1,5 +1,5 @@
 ---
-date:   2020-07-20 00:00:00
+date:   2020-07-20 12:00:00
 title:  "Superhot: Mind Control Delete"
 tags:   [juego]
 image:  '/images/reviews/superhot-mind-control-delete.jpg'

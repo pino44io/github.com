@@ -1,5 +1,5 @@
 ---
-date:   2022-09-28 00:00:00
+date:   2022-09-28 12:00:00
 title:  Better Call Saul S06
 tags:   [better-call-saul, breaking-bad, serie]
 image:  '/images/reviews/better-call-saul-s06.jpg'

@@ -1,5 +1,5 @@
 ---
-date:   2021-01-04 00:00:00
+date:   2021-01-04 12:00:00
 title:  "Rythm of War"
 tags:   [libro]
 image:  '/images/reviews/rythm-of-war.jpg'

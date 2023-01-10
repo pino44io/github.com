@@ -1,5 +1,5 @@
 ---
-date:   2021-04-08 00:00:00
+date:   2021-04-08 12:00:00
 title:  "Cowboy Bebop"
 tags:   [serie]
 image:  '/images/reviews/cowboy-bebop.jpg'

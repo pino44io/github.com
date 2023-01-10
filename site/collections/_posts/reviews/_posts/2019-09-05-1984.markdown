@@ -1,5 +1,5 @@
 ---
-date:   2019-09-05 00:00:00
+date:   2019-09-05 12:00:00
 title:  "1984"
 tags:   [libro]
 image:  '/images/reviews/1984.jpg'

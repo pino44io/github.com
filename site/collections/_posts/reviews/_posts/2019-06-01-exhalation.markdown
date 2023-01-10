@@ -1,5 +1,5 @@
 ---
-date:   2019-06-01 00:00:00
+date:   2019-06-01 12:00:00
 title:  "Exhalation"
 tags:   [libro]
 image:  '/images/reviews/exhalation.jpg'

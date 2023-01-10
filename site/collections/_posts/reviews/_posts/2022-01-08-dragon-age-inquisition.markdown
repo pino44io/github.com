@@ -1,5 +1,5 @@
 ---
-date:   2022-01-08 00:00:00
+date:   2022-01-08 12:00:00
 title:  "Dragon Age: Inquisition"
 tags:   [dragon-age, juego]
 image:  '/images/reviews/dragon-age-inquisition.jpg'

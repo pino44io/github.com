@@ -1,5 +1,5 @@
 ---
-date:   2022-01-22 00:00:00
+date:   2022-01-22 12:00:00
 title:  Flinthook
 tags:   [juego]
 image:  '/images/reviews/flinthook.jpg'

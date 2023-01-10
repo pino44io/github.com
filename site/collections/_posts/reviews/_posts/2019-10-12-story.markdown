@@ -1,5 +1,5 @@
 ---
-date:   2019-10-12 00:00:00
+date:   2019-10-12 12:00:00
 title:  "Story"
 tags:   [libro]
 image:  '/images/reviews/story.jpg'

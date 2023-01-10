@@ -1,5 +1,5 @@
 ---
-date:   2021-08-30 00:00:00
+date:   2021-08-30 12:00:00
 title:  "Torchlight 2"
 tags:   [torchlight, juego]
 image:  '/images/reviews/torchlight-2.jpg'

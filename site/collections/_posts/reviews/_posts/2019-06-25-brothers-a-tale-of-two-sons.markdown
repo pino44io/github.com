@@ -1,5 +1,5 @@
 ---
-date:   2019-06-25 00:00:00
+date:   2019-06-25 12:00:00
 title:  "Brothers: A Tale of Two Sons"
 tags:   [juego]
 image:  '/images/reviews/brothers-a-tale-of-two-sons.jpg'

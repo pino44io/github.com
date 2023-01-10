@@ -1,5 +1,5 @@
 ---
-date:   2021-10-09 00:00:00
+date:   2021-10-09 12:00:00
 title:  "God of War: Chains of Olympus"
 tags:   [god-of-war, juego]
 image:  '/images/reviews/god-of-war-chains-of-olympus.jpg'

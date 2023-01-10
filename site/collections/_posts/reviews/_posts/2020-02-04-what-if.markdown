@@ -1,5 +1,5 @@
 ---
-date:   2020-02-04 00:00:00
+date:   2020-02-04 12:00:00
 title:  "What if?"
 tags:   [libro]
 image:  '/images/reviews/what-if.jpg'

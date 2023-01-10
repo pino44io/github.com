@@ -1,5 +1,5 @@
 ---
-date:   2020-06-27 00:00:00
+date:   2020-06-27 12:00:00
 title:  "Dark S03"
 tags:   [serie]
 image:  '/images/reviews/dark-s03.jpg'

@@ -1,5 +1,5 @@
 ---
-date:   2021-10-24 00:00:00
+date:   2021-10-24 12:00:00
 title:  "Las Dos Torres"
 tags:   [lord-of-the-rings, libro]
 image:  '/images/reviews/las-dos-torres.jpg'

@@ -1,5 +1,5 @@
 ---
-date:   2021-12-23 00:00:00
+date:   2021-12-23 12:00:00
 title:  "Asura's Wrath"
 tags:   [juego]
 image:  '/images/reviews/asuras-wrath.jpg'

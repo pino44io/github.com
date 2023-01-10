@@ -1,5 +1,5 @@
 ---
-date:   2020-06-26 00:00:00
+date:   2020-06-26 12:00:00
 title:  "Death’s Gambit"
 tags:   [juego]
 image:  '/images/reviews/deaths-gambit.jpg'

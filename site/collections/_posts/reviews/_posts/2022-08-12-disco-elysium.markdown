@@ -1,5 +1,5 @@
 ---
-date:   2022-08-12 00:00:00
+date:   2022-08-12 12:00:00
 title:  Disco Elysium
 tags:   [disco-elysium, juego]
 image:  '/images/reviews/disco-elysium.jpg'

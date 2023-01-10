@@ -1,5 +1,5 @@
 ---
-date:   2019-06-08 00:00:00
+date:   2019-06-08 12:00:00
 title:  "The Lies of Locke Lamora"
 tags:   [the-gentleman-bastards, libro]
 image:  '/images/reviews/the-lies-of-locke-lamora.jpg'

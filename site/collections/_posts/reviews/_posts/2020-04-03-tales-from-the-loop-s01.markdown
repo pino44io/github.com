@@ -1,5 +1,5 @@
 ---
-date:   2020-04-03 00:00:00
+date:   2020-04-03 12:00:00
 title:  "Tales From the Loop S01"
 tags:   [tales-from-the-loop, serie]
 image:  '/images/reviews/tales-from-the-loop-s01.jpg'

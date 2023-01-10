@@ -1,5 +1,5 @@
 ---
-date:   2022-03-11 00:00:00
+date:   2022-03-11 12:00:00
 title:  "Spider-Man: No Way Home"
 description: No estoy seguro si es una buena película, pero sí la disfruté mucho.
 tags:   [spiderman, pelicula, spoilers]

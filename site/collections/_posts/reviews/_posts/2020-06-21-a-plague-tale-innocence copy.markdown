@@ -1,5 +1,5 @@
 ---
-date:   2020-06-21 00:00:00
+date:   2020-06-21 12:00:00
 title:  "A Plague Tale: Innocence"
 tags:   [a-plague-tale, juego]
 image:  '/images/reviews/a-plague-tale-innocence.jpg'

@@ -1,5 +1,5 @@
 ---
-date:   2020-06-30 00:00:00
+date:   2020-06-30 12:00:00
 title:  "The Girl with the Dragon Tattoo"
 tags:   [pelicula]
 image:  '/images/reviews/the-girl-with-the-dragon-tattoo.jpg'

@@ -1,5 +1,5 @@
 ---
-date:   2022-12-10 00:00:00
+date:   2022-12-10 12:00:00
 title:  Somerville
 tags:   [juego, spoilers-parciales]
 image-card: '/images/reviews/somerville-card.jpg'

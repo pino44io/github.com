@@ -1,5 +1,5 @@
 ---
-date:   2020-09-04 00:00:00
+date:   2020-09-04 12:00:00
 title:  "The Terror S01"
 tags:   [serie]
 image:  '/images/reviews/the-terror-s01.jpg'

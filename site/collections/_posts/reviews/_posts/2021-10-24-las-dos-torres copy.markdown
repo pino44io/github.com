@@ -1,5 +1,5 @@
 ---
-date:   2021-09-07 00:00:00
+date:   2021-09-07 12:00:00
 title:  "La Comunidad del Anillo"
 tags:   [lord-of-the-rings, libro]
 image:  '/images/reviews/la-comunidad-del-anillo.jpg'

@@ -1,5 +1,5 @@
 ---
-date:   2021-06-09 00:00:00
+date:   2021-06-09 12:00:00
 title:  "Transistor"
 tags:   [juego]
 image:  '/images/reviews/transistor.jpg'

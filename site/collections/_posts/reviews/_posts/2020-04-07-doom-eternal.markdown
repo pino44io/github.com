@@ -1,5 +1,5 @@
 ---
-date:   2020-04-07 00:00:00
+date:   2020-04-07 12:00:00
 title:  "Doom Eternal"
 tags:   [doom, juego]
 image:  '/images/reviews/doom-eternal.jpg'

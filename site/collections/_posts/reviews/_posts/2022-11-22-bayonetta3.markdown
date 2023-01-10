@@ -1,5 +1,5 @@
 ---
-date:   2022-11-22 00:00:00
+date:   2022-11-22 12:00:00
 title:  Bayonetta 3
 tags:   [bayonetta, juego, spoilers-parciales]
 image-card: '/images/reviews/bayonetta3.jpg'

@@ -1,5 +1,5 @@
 ---
-date:   2021-04-10 00:00:00
+date:   2021-04-10 12:00:00
 title:  "Night in the woods"
 tags:   [juego]
 image:  '/images/reviews/night-in-the-woods.jpg'

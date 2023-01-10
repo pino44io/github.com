@@ -1,5 +1,5 @@
 ---
-date:   2020-05-18 00:00:00
+date:   2020-05-18 12:00:00
 title:  "Halo: Reach"
 tags:   [halo, juego]
 image:  '/images/reviews/halo-reach.jpg'

@@ -1,5 +1,5 @@
 ---
-date:   2021-11-28 00:00:00
+date:   2021-11-28 12:00:00
 title:  "No Time to Die"
 tags:   [james-bond, pelicula]
 image:  '/images/reviews/no-time-to-die.jpg'

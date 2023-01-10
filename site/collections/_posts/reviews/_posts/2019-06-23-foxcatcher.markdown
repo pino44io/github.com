@@ -1,5 +1,5 @@
 ---
-date:   2019-06-23 00:00:00
+date:   2019-06-23 12:00:00
 title:  "Foxcatcher"
 tags:   [pelicula]
 image:  '/images/reviews/foxcatcher.jpg'

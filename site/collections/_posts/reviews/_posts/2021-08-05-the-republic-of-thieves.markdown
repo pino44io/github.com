@@ -1,5 +1,5 @@
 ---
-date:   2021-08-05 00:00:00
+date:   2021-08-05 12:00:00
 title:  "The Republic of Thieves"
 tags:   [the-gentleman-bastards, libro]
 image:  '/images/reviews/the-republic-of-thieves.jpg'

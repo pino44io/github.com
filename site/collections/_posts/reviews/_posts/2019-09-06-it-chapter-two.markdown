@@ -1,5 +1,5 @@
 ---
-date:   2021-08-07 00:00:00
+date:   2019-09-06 12:00:00
 title:  "It: Chapter Two"
 tags:   [pelicula]
 image:  '/images/reviews/it-chapter-two.jpg'

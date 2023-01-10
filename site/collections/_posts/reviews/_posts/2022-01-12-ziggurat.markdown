@@ -1,5 +1,5 @@
 ---
-date:   2022-01-12 00:00:00
+date:   2022-01-12 12:00:00
 title:  Ziggurat
 tags:   [juego]
 image:  '/images/reviews/ziggurat.jpg'

@@ -1,5 +1,5 @@
 ---
-date:   2022-04-11 00:00:00
+date:   2022-04-11 12:00:00
 title:  Peaky Blinders S06
 description: Disfrutable, digna sucesora de la serie, pero, para bien o para mal, sigue la misma pendiente que planteaba la temporada anterior.
 tags:   [peaky-blinders, serie, spoilers]

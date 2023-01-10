@@ -1,5 +1,5 @@
 ---
-date:   2021-09-17 00:00:00
+date:   2021-09-17 12:00:00
 title:  "Hades"
 tags:   [hades, juego]
 image:  '/images/reviews/hades.jpg'

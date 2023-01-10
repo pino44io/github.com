@@ -1,5 +1,5 @@
 ---
-date:   2021-09-07 00:00:00
+date:   2021-09-07 12:00:00
 title:  "Inside"
 tags:   [juego]
 image:  '/images/reviews/inside-game.jpg'

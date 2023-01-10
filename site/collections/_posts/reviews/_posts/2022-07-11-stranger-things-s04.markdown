@@ -1,5 +1,5 @@
 ---
-date:   2022-07-11 00:00:00
+date:   2022-07-11 12:00:00
 title:  Stranger Things S04
 tags:   [stranger-things, serie, spoilers]
 image:  '/images/reviews/stranger-things-s04.jpg'

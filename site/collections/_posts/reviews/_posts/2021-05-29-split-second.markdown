@@ -1,5 +1,5 @@
 ---
-date:   2021-06-27 00:00:00
+date:   2021-06-27 12:00:00
 title:  "Split/Second"
 tags:   [juego]
 image:  '/images/reviews/split-second.jpg'

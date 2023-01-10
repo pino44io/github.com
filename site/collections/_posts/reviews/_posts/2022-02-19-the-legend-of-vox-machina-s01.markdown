@@ -1,5 +1,5 @@
 ---
-date:   2022-02-19 00:00:00
+date:   2022-02-19 12:00:00
 title:  The Legend of Vox Machina S01
 tags:   [the-legend-of-vox-machina, serie, spoilers]
 image:  '/images/reviews/the-legend-of-vox-machina-s01.jpg'

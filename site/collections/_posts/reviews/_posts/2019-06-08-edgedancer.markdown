@@ -1,5 +1,5 @@
 ---
-date:   2019-06-08 00:00:00
+date:   2019-06-08 12:00:00
 title:  "Edgedancer"
 tags:   [cosmere, libro]
 image:  '/images/reviews/edgedancer.jpg'

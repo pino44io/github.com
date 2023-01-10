@@ -1,5 +1,5 @@
 ---
-date:   2021-05-13 00:00:00
+date:   2021-05-13 12:00:00
 title:  "Castlevania S04"
 tags:   [castlevania, serie]
 image:  '/images/reviews/castlevania-s04.jpg'

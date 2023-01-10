@@ -1,5 +1,5 @@
 ---
-date:   2019-11-07 00:00:00
+date:   2019-11-07 12:00:00
 title:  "Oathbringer"
 tags:   [cosmere, libro]
 image:  '/images/reviews/oathbringer.jpg'

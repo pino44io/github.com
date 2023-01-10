@@ -1,5 +1,5 @@
 ---
-date:   2019-06-04 00:00:00
+date:   2019-06-04 12:00:00
 title:  "The Children's Act"
 tags:   [pelicula]
 image:  '/images/reviews/the-childrens-act.jpg'

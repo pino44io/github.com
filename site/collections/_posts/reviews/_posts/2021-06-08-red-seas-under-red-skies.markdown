@@ -1,5 +1,5 @@
 ---
-date:   2021-06-08 00:00:00
+date:   2021-06-08 12:00:00
 title:  "Red Seas Under Red Skies"
 tags:   [the-gentleman-bastards, libro]
 image:  '/images/reviews/red-seas-under-red-skies.jpg'

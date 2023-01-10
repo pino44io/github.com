@@ -1,5 +1,5 @@
 ---
-date:   2022-03-05 00:00:00
+date:   2022-03-05 12:00:00
 title:  Death's Door
 tags:   [juego]
 image:  '/images/reviews/deaths-door.jpg'

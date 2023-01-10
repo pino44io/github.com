@@ -1,5 +1,5 @@
 ---
-date:   2020-09-01 00:00:00
+date:   2020-09-01 12:00:00
 title:  "Sterve Jobs (2015)"
 tags:   [pelicula]
 image:  '/images/reviews/steve-jobs.png'

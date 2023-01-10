@@ -1,5 +1,5 @@
 ---
-date:   2020-05-11 00:00:00
+date:   2020-05-11 12:00:00
 title:  "Dragon Age: Origins"
 tags:   [dragon-age, juego]
 image:  '/images/reviews/dragon-age-origins.jpg'

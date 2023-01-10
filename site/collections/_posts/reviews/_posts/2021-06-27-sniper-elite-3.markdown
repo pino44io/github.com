@@ -1,5 +1,5 @@
 ---
-date:   2021-06-27 00:00:00
+date:   2021-06-27 12:00:00
 title:  "Sniper Elite 3"
 tags:   [sniper-elite, juego]
 image:  '/images/reviews/sniper-elite-3.jpg'

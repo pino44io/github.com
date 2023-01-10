@@ -1,5 +1,5 @@
 ---
-date:   2022-07-24 00:00:00
+date:   2022-07-24 12:00:00
 title:  Monster Hunter Rise
 tags:   [monster-hunter, juego]
 image:  '/images/reviews/monster-hunter-rise.png'

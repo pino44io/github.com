@@ -1,5 +1,5 @@
 ---
-date:   2022-01-28 00:00:00
+date:   2022-01-28 12:00:00
 title:  "Bulletstorm: Full Clip Edition"
 tags:   [juego]
 image:  '/images/reviews/bulletstorm.png'
