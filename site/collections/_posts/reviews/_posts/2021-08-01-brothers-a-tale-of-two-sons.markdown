@@ -1,0 +1,14 @@
+---
+date:   2021-08-07 00:00:00
+title:  "Brothers: A Tale of Two Sons"
+tags:   [juego]
+image:  '/images/reviews/brothers-a-tale-of-two-sons.jpg'
+category: el-corgi-pretencioso
+---
+Lo jugué esta tarde (cortito, unas 5 horas).
+
+Nada espectacular a simple vista, lindo visualmente y nada difícil.
+
+Pero chabon, el juego este lleva el concepto de mecánicas significativas a otro nivel. Como las utiliza para contar la historia y la relación entre los dos hermanos es de las cosas mas hermosas que vi.
+
+Eso solo hace que la experiencia entera valga la pena
