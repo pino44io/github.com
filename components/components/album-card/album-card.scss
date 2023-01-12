@@ -1,4 +1,4 @@
-.c-project-card { $c: &;
+.c-album-card { $c: &;
 	margin-bottom: 20px;
 	transition: transform .2s ease;
 
@@ -82,7 +82,7 @@
 		}
 
 		@media only screen and (max-width: $mobile) {
-			.project__info {
+			.album__info {
 				padding: 0 32px 32px;
 			}
 		}

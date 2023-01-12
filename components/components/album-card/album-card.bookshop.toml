@@ -1,11 +1,11 @@
 [component]
 structures = []
-label = "Project Card"
-description = "Project card used for project lists"
+label = "Album Card"
+description = "Album card used for album lists"
 icon = "wysiwyg"
 tags = []
 
-[props.project]
+[props.album]
 title = "Hello World"
 subtitle = "Lorem Ipsum"
 image = "https://placekitten.com/800/400"

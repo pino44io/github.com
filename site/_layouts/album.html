@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 <style>
     .image-gallery {overflow: auto; margin-left: -1%!important;}
     .image-gallery a {float: left; display: block; margin: 0 0 1% 1%; width: 19%; text-align: center; text-decoration: none!important;}
@@ -5,7 +9,7 @@
     .image-gallery a img {width: 100%; display: block;}
   </style>
 
-  <h1>{{ include.album-name }}</h1>
+  <h1>{{ page.title }}</h1>
   
   <div class="pig-wrapper">
       <div id="pig"></div>
@@ -13,12 +17,8 @@
   <script type="text/javascript" src="../../js/pig.js"></script>
   <script type="text/javascript">
       var imageData = [
-      {% for album in site.data.virtual-photography %}
-        {% if album.album-name contains include.album-name  %}
-            {% for image in album.images %}
-                {"filename":"{{ image.thumbnail-link }}","aspectRatio":{{ image.aspect-ratio }}},
-            {% endfor %}
-        {% endif %}
+      {% for image in site.data.virtual-photography[page.slug] %}
+            {"filename":"{{ image.thumbnail-link }}","aspectRatio":{{ image.aspect-ratio }}},
       {% endfor %}
       ];
 

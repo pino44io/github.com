@@ -7,5 +7,7 @@ menu__settings:
       url: '/'
     - title: 'Blog'
       url: '/blog/'
+    - title: 'Virtual Photography'
+      url: '/virtual-photography/'
     - title: 'About'
       url: '/about/'

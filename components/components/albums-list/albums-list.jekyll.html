@@ -1,0 +1,9 @@
+{% if include.show_albums %}
+<div class="container animate">
+  <div class="row">
+    {% for album in site.albums %}
+      {% bookshop album-card album=album %}
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
