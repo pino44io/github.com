@@ -34,6 +34,9 @@ collections:
   posts:
     output: true
     permalink: /:categories/:slug
+  albums:
+    output: true
+    permalink: /virtual-photography/:slug
 
 cloudcannon:
   collections:
@@ -75,6 +78,10 @@ defaults:
       type: reviews
     values:
       layout: review
+  - scope:
+      type: albums
+    values:
+      layout: album
 
 #sass:
 #  sass_dir: _sass
