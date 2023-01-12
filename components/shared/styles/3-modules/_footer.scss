@@ -4,6 +4,7 @@
   padding: 40px 0 30px;
   overflow: hidden;
   background: linear-gradient(90deg, $primary-color 0%, $secondary-color 167%);
+  margin-top: 50px;
 
   .social {
     margin-bottom: 40px;
@@ -58,6 +59,10 @@
 
   @media only screen and (max-width: $desktop) {
     padding: 40px 0 30px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    margin-top: 35px;
   }
 
   @media only screen and (max-width: $mobile) {

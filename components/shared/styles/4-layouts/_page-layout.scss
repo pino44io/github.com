@@ -517,3 +517,38 @@
 		font-size: 36px;
 	}
 }
+
+/* Virtual Photography Grid */
+
+.pig-wrapper {
+	margin: 0 100px;
+
+	@media only screen and (max-width: $tablet) {
+		margin: 0 50px;
+	}
+
+	@media only screen and (max-width: $mobile) {
+		margin: 0 30px;
+	}
+}
+
+
+.gridContainer {
+	width: 95%;
+	margin: 0 auto;
+}
+
+.image-row {
+	width: 100%;
+	white-space:nowrap;
+	line-height: 0;
+}
+
+.image-row img {
+	margin-right:5px;
+	margin-bottom:5px;
+}
+
+img.pig-loaded {
+	margin:0;
+}
