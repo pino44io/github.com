@@ -1,3 +1,10 @@
+/** PIG.js:
+ * Original source by Dan Schlosser: https://github.com/schlosser/pig.js
+ * Swipebox modification by Mark Rodgers: https://github.com/mark-rodgers/pig.js
+ * This version used in https://github.com/jmodjeska/pigg
+ * removes ProgressiveImage.prototype.hide for maximum WordPress compatibility.
+*/
+
 (function(global) {
   'use strict';
 
@@ -8,9 +15,9 @@
    * optimizedResize is adapted from Mozilla code:
    * https://developer.mozilla.org/en-US/docs/Web/Events/resize
    */
-  const optimizedResize = (function() {
-    const callbacks = [];
-    let running = false;
+  var optimizedResize = (function() {
+    var callbacks = [];
+    var running = false;
 
     // fired on resize event
     function resize() {
@@ -59,21 +66,20 @@
        */
       reEnable: function() {
         window.addEventListener('resize', resize);
-      }
+      },
     };
   }());
 
   /**
    * Inject CSS needed to make the grid work in the <head></head>.
    *
-   * @param {string} containerId - ID of the container for the images.
    * @param {string} classPrefix - the prefix associated with this library that
    *                               should be prepended to classnames.
-   * @param {number} transitionSpeed - animation duration in milliseconds
+   * @param {string} containerId - ID of the container for the images.
    */
   function _injectStyle(containerId, classPrefix, transitionSpeed) {
 
-    const css = (
+    var css = (
       '#' + containerId + ' {' +
       '  position: relative;' +
       '}' +
@@ -90,10 +96,9 @@
       '  position: absolute;' +
       '  top: 0;' +
       '  height: 100%;' +
-      '  width: 100%;' +
       '  opacity: 0;' +
-      '  transition: ' + (transitionSpeed / 1000).toString(10) + 's ease opacity;' +
-      '  -webkit-transition: ' + (transitionSpeed / 1000).toString(10) + 's ease opacity;' +
+      '  transition: ' + (transitionSpeed / 1000) + 's ease opacity;' +
+      '  -webkit-transition: ' + (transitionSpeed / 1000) + 's ease opacity;' +
       '}' +
       '.' + classPrefix + '-figure img.' + classPrefix + '-thumbnail {' +
       '  -webkit-filter: blur(30px);' +
@@ -107,12 +112,11 @@
       '}'
     );
 
-    const head = document.head || document.getElementsByTagName('head')[0];
-    const style = document.createElement('style');
+    var head = document.head || document.getElementsByTagName("head")[0];
+    var style = document.createElement("style");
 
-    style.type = 'text/css';
+    style.type = "text/css";
     if (style.styleSheet) {
-      // set style for IE8 and below
       style.styleSheet.cssText = css;
     } else {
       style.appendChild(document.createTextNode(css));
@@ -129,7 +133,7 @@
    * @param {object} obj2 - The overrides to apply onto obj1.
    */
   function _extend(obj1, obj2) {
-    for (const i in obj2) {
+    for (var i in obj2) {
       if (obj2.hasOwnProperty(i)) {
         obj1[i] = obj2[i];
       }
@@ -142,17 +146,16 @@
    * the top of the page.
    *
    * @param {object} elem - The element to compute the offset of.
-   * @returns {number} - distance of `elem` to the top of the page
-   */
+   **/
   function _getOffsetTop(elem){
-    let offsetTop = 0;
-    do {
-      if (!isNaN(elem.offsetTop)){
-        offsetTop += elem.offsetTop;
-      }
-      elem = elem.offsetParent;
-    } while(elem);
-    return offsetTop;
+      var offsetTop = 0;
+      do {
+        if (!isNaN(elem.offsetTop)){
+            offsetTop += elem.offsetTop;
+        }
+        elem = elem.offsetParent;
+      } while(elem);
+      return offsetTop;
   }
 
   /**
@@ -167,6 +170,7 @@
    * @param {array} imageData - An array of metadata about each image to
    *                            include in the grid.
    * @param {string} imageData[0].filename - The filename of the image.
+   * @param {string} imageData[0].filenameFull - The filename of the full image.
    * @param {string} imageData[0].aspectRatio - The aspect ratio of the image.
    * @param {object} options - An object containing overrides for the default
    *                           options. See below for the full list of options
@@ -197,13 +201,6 @@
        *   be loaded.
        */
       containerId: 'pig',
-
-      /**
-       * Type: window | HTMLElement
-       * Default: window
-       * Description: The window or HTML element that the grid scrolls in.
-       */
-      scroller: window,
 
       /**
        * Type: string
@@ -265,6 +262,28 @@
       thumbnailSize: 20,
 
       /**
+       * Type: Boolean
+       * Default: false
+       * Description: Enable this to add an anchor tag around the image.
+       */
+      addAnchorTag: false,
+
+      /**
+       * Type: string
+       * Default: ''
+       * Description: Which directory should anchor use to find images.
+       */
+      anchorTargetDir: '',
+
+      /**
+       * Type: string
+       * Default: ''
+       * Description: When using an anchor around your image, here you can
+       *   define a custom class.
+       */
+      anchorClass: '',
+
+      /**
        * Get the URL for an image with the given filename & size.
        *
        * @param {string} filename - The filename of the image.
@@ -273,16 +292,8 @@
        * @returns {string} The URL of the image at the given size.
        */
       urlForSize: function(filename, size) {
-        return '/img/' + size.toString(10) + '/' + filename;
+        return '/img/' + size + '/' + filename;
       },
-
-      /**
-       * Get a callback with the filename of the image
-       * which was clicked.
-       *
-       * @param {string} filename - The filename property of the image.
-       */
-      onClickHandler: null,
 
       /**
        * Get the minimum required aspect ratio for a valid row of images. The
@@ -321,11 +332,10 @@
        * @returns {Number} The size (height in pixels) of the images to load.
        */
       getImageSize: function(lastWindowWidth) {
-        if (lastWindowWidth <= 640) {
+        if (lastWindowWidth <= 640)
           return 100;
-        } else if (lastWindowWidth <= 1920) {
+        else if (lastWindowWidth <= 1920)
           return 250;
-        }
         return 500;
       }
     };
@@ -338,8 +348,6 @@
     if (!this.container) {
       console.error('Could not find element with ID ' + this.settings.containerId);
     }
-
-    this.scroller = this.settings.scroller;
 
     // Our global reference for images in the grid.  Note that not all of these
     // images are necessarily in view or loaded.
@@ -366,7 +374,7 @@
    *   have been completed.
    */
   Pig.prototype._getTransitionTimeout = function() {
-    const transitionTimeoutScaleFactor = 1.5;
+    var transitionTimeoutScaleFactor = 1.5;
     return this.settings.transitionSpeed * transitionTimeoutScaleFactor;
   };
 
@@ -378,7 +386,7 @@
    */
   Pig.prototype._getTransitionString = function() {
     if (this.isTransitioning) {
-      return (this.settings.transitionSpeed / 1000).toString(10) + 's transform ease';
+      return (this.settings.transitionSpeed / 1000) + 's transform ease';
     }
 
     return 'none';
@@ -391,14 +399,13 @@
    * or not the value of this.minAspectRatio has changed.
    */
   Pig.prototype._recomputeMinAspectRatio = function() {
-    const oldMinAspectRatio = this.minAspectRatio;
+    var oldMinAspectRatio = this.minAspectRatio;
     this.minAspectRatio = this.settings.getMinAspectRatio(this.lastWindowWidth);
 
-    if (oldMinAspectRatio !== null && oldMinAspectRatio !== this.minAspectRatio) {
+    if (oldMinAspectRatio !== null && oldMinAspectRatio !== this.minAspectRatio)
       this.minAspectRatioRequiresTransition = true;
-    } else {
+    else
       this.minAspectRatioRequiresTransition = false;
-    }
   };
 
   /**
@@ -408,16 +415,17 @@
    * @param {array} imageData - An array of metadata about each image to
    *                            include in the grid.
    * @param {string} imageData[0].filename - The filename of the image.
+   * @param {string} imageData[0].filenameFull - The filename of the full image.
    * @param {string} imageData[0].aspectRatio - The aspect ratio of the image.
    *
    * @returns {Array[ProgressiveImage]} - An array of ProgressiveImage
    *                                      instances that we created.
    */
   Pig.prototype._parseImageData = function(imageData) {
-    const progressiveImages = [];
+    var progressiveImages = [];
 
     imageData.forEach(function(image, index) {
-      const progressiveImage = new ProgressiveImage(image, index, this);
+      var progressiveImage = new ProgressiveImage(image, index, this);
       progressiveImages.push(progressiveImage);
     }.bind(this));
 
@@ -441,13 +449,13 @@
    */
   Pig.prototype._computeLayout = function() {
     // Constants
-    const wrapperWidth = parseInt(this.container.clientWidth, 10);
+    var wrapperWidth = parseInt(this.container.clientWidth);
 
     // State
-    let row = [];           // The list of images in the current row.
-    let translateX = 0;     // The current translateX value that we are at
-    let translateY = 0;     // The current translateY value that we are at
-    let rowAspectRatio = 0; // The aspect ratio of the row we are building
+    var row = [];           // The list of images in the current row.
+    var translateX = 0;     // The current translateX value that we are at
+    var translateY = 0;     // The current translateY value that we are at
+    var rowAspectRatio = 0; // The aspect ratio of the row we are building
 
     // Compute the minimum aspect ratio that should be applied to the rows.
     this._recomputeMinAspectRatio();
@@ -468,7 +476,7 @@
     }
 
     // Get the valid-CSS transition string.
-    const transition = this._getTransitionString();
+    var transition = this._getTransitionString();
 
     // Loop through all our images, building them up into rows and computing
     // the working rowAspectRatio.
@@ -482,12 +490,9 @@
       // images.
       if (rowAspectRatio >= this.minAspectRatio || index + 1 === this.images.length) {
 
-        // Make sure that the last row also has a reasonable height
-        rowAspectRatio = Math.max(rowAspectRatio, this.minAspectRatio);
-
         // Compute this row's height.
-        const totalDesiredWidthOfImages = wrapperWidth - this.settings.spaceBetweenImages * (row.length - 1);
-        const rowHeight = totalDesiredWidthOfImages / rowAspectRatio;
+        var totalDesiredWidthOfImages = wrapperWidth - this.settings.spaceBetweenImages * (row.length - 1);
+        var rowHeight = totalDesiredWidthOfImages / rowAspectRatio;
 
         // For each image in the row, compute the width, height, translateX,
         // and translateY values, and set them (and the transition value we
@@ -498,15 +503,15 @@
         //       will be updated in _doLayout.
         row.forEach(function(img) {
 
-          const imageWidth = rowHeight * img.aspectRatio;
+          var imageWidth = rowHeight * img.aspectRatio;
 
           // This is NOT DOM manipulation.
           img.style = {
-            width: parseInt(imageWidth, 10),
-            height: parseInt(rowHeight, 10),
+            width: parseInt(imageWidth),
+            height: parseInt(rowHeight),
             translateX: translateX,
             translateY: translateY,
-            transition: transition
+            transition: transition,
           };
 
           // The next image is this.settings.spaceBetweenImages pixels to the
@@ -518,7 +523,7 @@
         // Reset our state variables for next row.
         row = [];
         rowAspectRatio = 0;
-        translateY += parseInt(rowHeight, 10) + this.settings.spaceBetweenImages;
+        translateY += parseInt(rowHeight) + this.settings.spaceBetweenImages;
         translateX = 0;
       }
     }.bind(this));
@@ -526,6 +531,7 @@
     // No space below the last image
     this.totalHeight = translateY - this.settings.spaceBetweenImages;
   };
+
 
   /**
    * Update the DOM to reflect the style values of each image in the PIG,
@@ -595,26 +601,26 @@
     this.container.style.height = this.totalHeight + 'px';
 
     // Get the top and bottom buffers heights.
-    const bufferTop =
+    var bufferTop =
       (this.scrollDirection === 'up') ?
-        this.settings.primaryImageBufferHeight :
-        this.settings.secondaryImageBufferHeight;
-    const bufferBottom =
+      this.settings.primaryImageBufferHeight :
+      this.settings.secondaryImageBufferHeight;
+    var bufferBottom =
       (this.scrollDirection === 'down') ?
-        this.settings.secondaryImageBufferHeight :
-        this.settings.primaryImageBufferHeight;
+      this.settings.secondaryImageBufferHeight :
+      this.settings.primaryImageBufferHeight;
 
     // Now we compute the location of the top and bottom buffers:
-    const containerOffset = _getOffsetTop(this.container);
-    const scrollerHeight = this.scroller === window ? window.innerHeight : this.scroller.offsetHeight;
+    var containerOffset = _getOffsetTop(this.container);
+    var windowHeight = window.innerHeight;
 
     // This is the top of the top buffer. If the bottom of an image is above
     // this line, it will be removed.
-    const minTranslateYPlusHeight = this.latestYOffset - containerOffset - bufferTop;
+    var minTranslateYPlusHeight = this.latestYOffset - containerOffset - bufferTop;
 
     // This is the bottom of the bottom buffer.  If the top of an image is
     // below this line, it will be removed.
-    const maxTranslateY = this.latestYOffset - containerOffset + scrollerHeight + bufferBottom;
+    var maxTranslateY = this.latestYOffset + windowHeight + bufferBottom;
 
     // Here, we loop over every image, determine if it is inside our buffers or
     // no, and either insert it or remove it appropriately.
@@ -634,10 +640,10 @@
   /**
    * Create our onScroll handler and return it.
    *
-   * @returns {function} Our optimized onScroll handler that we should attach to.
+   * @returns {function} Our optimized onScroll handler.
    */
   Pig.prototype._getOnScroll = function() {
-    const _this = this;
+    var _this = this;
 
     /**
      * This function is called on scroll. It computes variables about the page
@@ -647,11 +653,13 @@
      * We use the boolean variable _this.inRAF to ensure that we don't overload
      * the number of layouts we perform by starting another layout while we are
      * in the middle of doing one.
+     *
+     * @returns {function} The onScroll handler that we should attach.
      */
-    const onScroll = function() {
+    var onScroll = function() {
       // Compute the scroll direction using the latestYOffset and the
       // previousYOffset
-      const newYOffset = _this.scroller === window ? window.pageYOffset : _this.scroller.scrollTop;
+      var newYOffset = window.pageYOffset;
       _this.previousYOffset = _this.latestYOffset || newYOffset;
       _this.latestYOffset = newYOffset;
       _this.scrollDirection = (_this.latestYOffset > _this.previousYOffset) ? 'down' : 'up';
@@ -677,15 +685,14 @@
    */
   Pig.prototype.enable = function() {
     this.onScroll = this._getOnScroll();
-
-    this.scroller.addEventListener('scroll', this.onScroll);
+    window.addEventListener('scroll', this.onScroll);
 
     this.onScroll();
     this._computeLayout();
     this._doLayout();
 
     optimizedResize.add(function() {
-      this.lastWindowWidth = this.scroller === window ? window.innerWidth : this.scroller.offsetWidth;
+      this.lastWindowWidth = window.innerWidth;
       this._computeLayout();
       this._doLayout();
     }.bind(this));
@@ -699,7 +706,7 @@
    * @returns {object} The Pig instance.
    */
   Pig.prototype.disable = function() {
-    this.scroller.removeEventListener('scroll', this.onScroll);
+    window.removeEventListener('scroll', this.onScroll);
     optimizedResize.disable();
     return this;
   };
@@ -732,12 +739,9 @@
    * @param {array} singleImageData - An array of metadata about each image to
    *                                  include in the grid.
    * @param {string} singleImageData[0].filename - The filename of the image.
+   * @param {string} singleImageData[0].filenameFull - The filename of the full image.
    * @param {string} singleImageData[0].aspectRatio - The aspect ratio of the
    *                                                  image.
-   * @param {number} index - Index of the image in the list of images
-   * @param {object} pig - The Pig instance
-   *
-   * @returns {object}  The Pig instance, for easy chaining with the constructor.
    */
   function ProgressiveImage(singleImageData, index, pig) {
 
@@ -747,6 +751,7 @@
     // Instance information
     this.aspectRatio = singleImageData.aspectRatio;  // Aspect Ratio
     this.filename = singleImageData.filename;  // Filename
+    this.filenameFull = singleImageData.filenameFull;  // Filename of the full image
     this.index = index;  // The index in the list of images
 
     // The Pig instance
@@ -755,7 +760,7 @@
     this.classNames = {
       figure: pig.settings.classPrefix + '-figure',
       thumbnail: pig.settings.classPrefix + '-thumbnail',
-      loaded: pig.settings.classPrefix + '-loaded'
+      loaded: pig.settings.classPrefix + '-loaded',
     };
 
     return this;
@@ -802,6 +807,7 @@
         }.bind(this);
 
         this.getElement().appendChild(this.thumbnail);
+
       }
 
       // Show full image
@@ -817,9 +823,23 @@
           }
         }.bind(this);
 
-        this.getElement().appendChild(this.fullImage);
-      }
+        // Add anchor around image
+        if(this.pig.settings.addAnchorTag) {
+          var temp = this.fullImage.src.split('/');
+          var filename = temp[temp.length - 1];
+          var anchor = document.createElement('a');
+          anchor.setAttribute('href', this.filenameFull);
+          anchor.setAttribute('class', this.pig.settings.anchorClass);
+          anchor.appendChild(this.fullImage);
+          this.getElement().appendChild(anchor);
 
+          ;( function( $ ) {
+            $( '.swipebox' ).swipebox();
+          } )( jQuery );
+        } else {
+          this.getElement().appendChild(this.fullImage);
+        }
+      }
     }.bind(this), 100);
   };
 
@@ -831,26 +851,31 @@
   ProgressiveImage.prototype.hide = function() {
     // Remove the images from the element, so that if a user is scrolling super
     // fast, we won't try to load every image we scroll past.
-    if (this.getElement()) {
-      if (this.thumbnail) {
-        this.thumbnail.src = '';
-        this.getElement().removeChild(this.thumbnail);
-        delete this.thumbnail;
-      }
-
-      if (this.fullImage) {
-        this.fullImage.src = '';
-        this.getElement().removeChild(this.fullImage);
-        delete this.fullImage;
-      }
-    }
-
-    // Remove the image from the DOM.
-    if (this.existsOnPage) {
-      this.pig.container.removeChild(this.getElement());
-    }
-
+    //
+    // This is problematic on WordPress.
+    // jm 2018.04.22
+    //
+    // if (this.getElement()) {
+    //   if (this.thumbnail) {
+    //     this.thumbnail.src = '';
+    //     this.getElement().removeChild(this.thumbnail);
+    //     delete this.thumbnail;
+    //   }
+    //
+    //   if (this.fullImage) {
+    //     this.fullImage.src = '';
+    //     this.getElement().removeChild(this.fullImage);
+    //     delete this.fullImage;
+    //   }
+    // }
+    //
+    // // Remove the image from the DOM.
+    // if (this.existsOnPage) {
+    //   this.pig.container.removeChild(this.getElement());
+    // }
+    //
     this.existsOnPage = false;
+
   };
 
   /**
@@ -863,17 +888,11 @@
     if (!this.element) {
       this.element = document.createElement(this.pig.settings.figureTagName);
       this.element.className = this.classNames.figure;
-      if (this.pig.settings.onClickHandler !== null) {
-        this.element.addEventListener('click', function() {
-          this.pig.settings.onClickHandler(this.filename);
-        }.bind(this) );
-      }
       this._updateStyles();
     }
 
     return this.element;
   };
-
 
   /**
    * Updates the style attribute to reflect this style property on this object.
@@ -889,11 +908,11 @@
 
   // Export Pig into the global scope.
   if (typeof define === 'function' && define.amd) {
-    define([], function() { return { Pig: Pig }; });
+    define(Pig);
   } else if (typeof module !== 'undefined' && module.exports) {
     module.exports = Pig;
   } else {
     global.Pig = Pig;
   }
 
-}(typeof window !== 'undefined' ? window : this));
+}(this));

@@ -24,21 +24,26 @@ layout: default
   </div>
 
   <!-- Finish page heading-->
-  
   <div class="pig-wrapper">
       <div id="pig"></div>
   </div>
-  <script type="text/javascript" src="../../js/pig.js"></script>
+  <script type="text/javascript" src="../../js/album/pig.js"></script>
   <script type="text/javascript">
-      var imageData = [
-      {% for image in site.data.virtual-photography[page.slug] %}
-            {"filename":"{{ image.thumbnail-link }}","aspectRatio":{{ image.aspect-ratio }}},
-      {% endfor %}
-      ];
-
-      var pig = new Pig(imageData, {
-          urlForSize: function(filename, size) {
-              return filename;
-          }
-      }).enable();
+    var imageData = [
+    {% for image in site.data.virtual-photography[page.slug] %}
+        {"filename":"{{ image.thumbnail-link }}", "filenameFull":"{{ image.link }}", "aspectRatio":{{ image.aspect-ratio }}},
+    {% endfor %}
+    ];
+    var pig = new Pig(imageData, {
+    urlForSize: function(filename, size) {
+    return filename;
+    },
+    addAnchorTag: true,
+    anchorTargetDir: "",
+    anchorClass: "swipebox"
+    }).enable();
+    ;( function( $ ) {
+    $( '.swipebox' ).swipebox();
+    } )( jQuery );
   </script>
+
