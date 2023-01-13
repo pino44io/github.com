@@ -31,12 +31,19 @@ layout: default
   <script type="text/javascript">
     var imageData = [
     {% for image in site.data.virtual-photography[page.slug] %}
-        {"filename":"{{ image.thumbnail-link }}", "filenameFull":"{{ image.link }}", "aspectRatio":{{ image.aspect-ratio }}},
+        {"thumbnail":"{{ image.thumbnail-link }}", "image1080":"{{ "https://techcrunch.com/wp-content/uploads/2014/06/babygif.gif" }}", "imageFull":"{{ image.imageFull-link }}", "aspectRatio":{{ image.aspect-ratio }}},
     {% endfor %}
     ];
     var pig = new Pig(imageData, {
-    urlForSize: function(filename, size) {
-    return filename;
+    urlForSize: function(imageUrls, sizewidth) {
+      console.log(sizewidth)
+      if (sizewidth <= 1100){
+        return imageUrls.thumbnail;
+      }
+      else if(sizewidth <= 1920){
+        return imageUrls.image1080;
+      }
+      return imageUrls.imageFull;
     },
     addAnchorTag: true,
     anchorTargetDir: "",

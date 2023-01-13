@@ -3,6 +3,7 @@
  * Swipebox modification by Mark Rodgers: https://github.com/mark-rodgers/pig.js
  * This version used in https://github.com/jmodjeska/pigg
  * removes ProgressiveImage.prototype.hide for maximum WordPress compatibility.
+ * Further modified by originalnicodr to work with external imagelinks instead of filenames.
 */
 
 (function(global) {
@@ -169,8 +170,9 @@
    *
    * @param {array} imageData - An array of metadata about each image to
    *                            include in the grid.
-   * @param {string} imageData[0].filename - The filename of the image.
-   * @param {string} imageData[0].filenameFull - The filename of the full image.
+   * @param {string} imageData[0].thumbnail - The filename of the thumbnail image.
+   * @param {string} imageData[0].image1080 - The filename of the 1080 image.
+   * @param {string} imageData[0].imageFull - The filename of the full image.
    * @param {string} imageData[0].aspectRatio - The aspect ratio of the image.
    * @param {object} options - An object containing overrides for the default
    *                           options. See below for the full list of options
@@ -319,7 +321,8 @@
         }
         return 2.5;
       },
-
+      
+      //We are not using this for now, and instead handle the size directly on the given urlForSize
       /**
        * Get the image size (height in pixels) to use for this window width.
        * Responsive resizing of images is achieved through changes to what this
@@ -414,8 +417,9 @@
    *
    * @param {array} imageData - An array of metadata about each image to
    *                            include in the grid.
-   * @param {string} imageData[0].filename - The filename of the image.
-   * @param {string} imageData[0].filenameFull - The filename of the full image.
+   * @param {string} imageData[0].thumbnail - The thumbnail of the image.
+   * @param {string} imageData[0].image1080 - The filename of the full image.
+   * @param {string} imageData[0].imageFull - The filename of the full image.
    * @param {string} imageData[0].aspectRatio - The aspect ratio of the image.
    *
    * @returns {Array[ProgressiveImage]} - An array of ProgressiveImage
@@ -738,8 +742,9 @@
    *
    * @param {array} singleImageData - An array of metadata about each image to
    *                                  include in the grid.
-   * @param {string} singleImageData[0].filename - The filename of the image.
-   * @param {string} singleImageData[0].filenameFull - The filename of the full image.
+   * @param {string} singleImageData[0].thumbnail - The thumbnail of the image.
+   * @param {string} singleImageData[0].image1080 - The filename of the 1080 image.
+   * @param {string} singleImageData[0].imageFull - The filename of the full image.
    * @param {string} singleImageData[0].aspectRatio - The aspect ratio of the
    *                                                  image.
    */
@@ -750,8 +755,9 @@
 
     // Instance information
     this.aspectRatio = singleImageData.aspectRatio;  // Aspect Ratio
-    this.filename = singleImageData.filename;  // Filename
-    this.filenameFull = singleImageData.filenameFull;  // Filename of the full image
+    this.thumbnail = singleImageData.thumbnail;  // Thumbnail
+    this.image1080 = singleImageData.image1080;  // 1080 image
+    this.imageFull = singleImageData.imageFull;  // Filename of the full image
     this.index = index;  // The index in the list of images
 
     // The Pig instance
@@ -786,6 +792,12 @@
     // and we can exit.
     setTimeout(function() {
 
+      var imageUrls = {
+        thumbnail: this.thumbnail,
+        image1080: this.image1080,
+        imageFull: this.imageFull,
+      };
+
       // The image was hidden very quickly after being loaded, so don't bother
       // loading it at all.
       if (!this.existsOnPage) {
@@ -795,7 +807,8 @@
       // Show thumbnail
       if (!this.thumbnail) {
         this.thumbnail = new Image();
-        this.thumbnail.src = this.pig.settings.urlForSize(this.filename, this.pig.settings.thumbnailSize);
+        console.log(this.pig.settings.thumbnailSize)
+        this.thumbnail.src = this.pig.settings.urlForSize(imageUrls, this.pig.settings.thumbnailSize);
         this.thumbnail.className = this.classNames.thumbnail;
         this.thumbnail.onload = function() {
 
@@ -813,7 +826,8 @@
       // Show full image
       if (!this.fullImage) {
         this.fullImage = new Image();
-        this.fullImage.src = this.pig.settings.urlForSize(this.filename, this.pig.settings.getImageSize(this.pig.lastWindowWidth));
+        console.log(this.pig.lastWindowWidth)
+        this.fullImage.src = this.pig.settings.urlForSize(imageUrls, this.pig.lastWindowWidth);
         this.fullImage.onload = function() {
 
           // We have to make sure fullImage still exists, we may have already been
@@ -828,7 +842,7 @@
           var temp = this.fullImage.src.split('/');
           var filename = temp[temp.length - 1];
           var anchor = document.createElement('a');
-          anchor.setAttribute('href', this.filenameFull);
+          anchor.setAttribute('href', this.imageFull);
           anchor.setAttribute('class', this.pig.settings.anchorClass);
           anchor.appendChild(this.fullImage);
           this.getElement().appendChild(anchor);
