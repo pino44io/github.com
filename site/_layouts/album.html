@@ -31,16 +31,17 @@ layout: default
   <script type="text/javascript">
     var imageData = [
     {% for image in site.data.virtual-photography[page.slug] %}
-        {"thumbnail":"{{ image.thumbnail-link }}", "image1080":"{{ "https://techcrunch.com/wp-content/uploads/2014/06/babygif.gif" }}", "imageFull":"{{ image.imageFull-link }}", "aspectRatio":{{ image.aspect-ratio }}},
+        {"thumbnail":"{{ image.thumbnail-link }}", "image1080":"{{ image.image1080-link }}", "imageFull":"{{ image.imageFull-link }}", "aspectRatio":{{ image.aspect-ratio }}},
     {% endfor %}
     ];
     var pig = new Pig(imageData, {
     urlForSize: function(imageUrls, sizewidth) {
       console.log(sizewidth)
-      if (sizewidth <= 1100){
+      if (sizewidth <= 1080){
         return imageUrls.thumbnail;
       }
       else if(sizewidth <= 1920){
+        console.log('aca');
         return imageUrls.image1080;
       }
       return imageUrls.imageFull;

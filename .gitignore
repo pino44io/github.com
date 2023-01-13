@@ -8,3 +8,4 @@ node_modules
 bookshop-live.js
 .DS_Store
 Gemfile.lock
+.env

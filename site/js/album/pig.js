@@ -807,7 +807,6 @@
       // Show thumbnail
       if (!this.thumbnail) {
         this.thumbnail = new Image();
-        console.log(this.pig.settings.thumbnailSize)
         this.thumbnail.src = this.pig.settings.urlForSize(imageUrls, this.pig.settings.thumbnailSize);
         this.thumbnail.className = this.classNames.thumbnail;
         this.thumbnail.onload = function() {
@@ -826,7 +825,6 @@
       // Show full image
       if (!this.fullImage) {
         this.fullImage = new Image();
-        console.log(this.pig.lastWindowWidth)
         this.fullImage.src = this.pig.settings.urlForSize(imageUrls, this.pig.lastWindowWidth);
         this.fullImage.onload = function() {
 
