@@ -9,21 +9,23 @@ layout: default
     .image-gallery a img {width: 100%; display: block;}
   </style>
 
-<!-- Page heading from page-heading.jekyll.html-->
-
 {% assign c = "c-page-heading" %}
+  <!-- Page heading from page-heading.jekyll.html-->
   <div class="container">
     <div class="{{c}}">
       {% if page.title %}
         <h1 class="{{c}}__title">{{ page.title }}</h1>
       {% endif %}
+      <span class="date"><time datetime="{{ page.date | date_to_xmlschema }}"><strong>{{ page.date | date_to_string}}</strong></time></span>
       {% if page.description %}
         <p class="{{c}}__description">{{ page.description }}</p>
       {% endif %}
     </div>
   </div>
-
   <!-- Finish page heading-->
+  <hr>
+
+  
   <div class="pig-wrapper">
       <div id="pig"></div>
   </div>
