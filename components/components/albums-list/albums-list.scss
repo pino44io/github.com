@@ -1,1 +1,63 @@
 /* Albums List */
+
+.album-order-wrapper {
+    text-align: center;
+    flex: auto;
+    flex-direction: column;
+    font-size: 26px;
+
+    @media only screen and (max-width: $tablet) {
+        font-size: 24px;
+    }
+
+    @media only screen and (max-width: $mobile) {
+        font-size: 22px;
+    }
+
+    margin: 40px auto 10px;
+}
+
+.album-order-options {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    margin: 0 auto;
+    text-align: center;
+
+    @media only screen and (max-width: $tablet) {
+        width: 400px;
+    }
+
+    @media only screen and (max-width: $mobile) {
+        width: 300px;
+    }
+}
+
+.album-order-selector {
+    padding: 8px 12px;
+    font-size: 24px;
+    border-radius: 4px;
+    will-change: transform;
+
+    @media only screen and (max-width: $tablet) {
+        font-size: 22px;
+    }
+
+    @media only screen and (max-width: $mobile) {
+        font-size: 20px;
+    }
+    
+
+    &:hover {
+      /*background-color: rgba($primary-color, 0.1);*/
+    }
+
+    &.active-link,
+    &.cc-active {
+      color: $primary-color;
+
+      &::after {
+        content: none;
+      }
+    }
+  }

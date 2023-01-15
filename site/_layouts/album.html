@@ -38,12 +38,10 @@ layout: default
     ];
     var pig = new Pig(imageData, {
     urlForSize: function(imageUrls, sizewidth) {
-      console.log(sizewidth)
       if (sizewidth <= 1080){
         return imageUrls.thumbnail;
       }
       else if(sizewidth <= 1920){
-        console.log('aca');
         return imageUrls.image1080;
       }
       return imageUrls.imageFull;
