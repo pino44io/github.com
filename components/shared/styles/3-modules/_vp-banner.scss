@@ -1,0 +1,163 @@
+/* Super basic resets */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+:root {
+    /* Custom animation timing curves */
+    --bezier-easeOutExpo: cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    --bezier-easeInOutQuint: cubic-bezier(0.860, 0.000, 0.070, 1.000);
+}
+
+/* --------------------------- Multi-screenshot banner graphic --------------------------- */
+
+.scr-banner {
+    --scr-banner-imgs-total: 5;
+    --scr-banner-inner-width: calc((100vw + var(--scr-banner-offset-x)) / var(--scr-banner-imgs-total));
+    --scr-banner-inner-height: calc(100% + (-1 * var(--scr-banner-offset-y))); /* controls also height of image, feel free to adjust along with `.scr-banner` height */
+    --scr-banner-offset-x: 90px;
+    --scr-banner-offset-y: -70px;
+    --scr-banner-skew: -10deg;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 3000px;
+    height: 400px;
+    background: #000;
+    border-radius: 5px; /* optional rounded corners */
+    overflow: hidden;
+    position: relative;
+}
+
+.scr-banner-imgs-wrapper {
+    width: calc(100% + (var(--scr-banner-offset-x) * 1.5));
+    height: var(--scr-banner-inner-height);
+    display: flex;
+}
+
+.scr-banner-imgs-item {
+    --scr-banner-imgs-item-no: 1;
+    --scr-banner-anim-offset: calc(250ms * (var(--scr-banner-imgs-item-no) - 1));
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: skew(var(--scr-banner-skew)) translateX(calc(-1 * var(--scr-banner-offset-x)));
+    margin: 0 -4px 0 0; /* Slight overlap to hide anti-aliased imprecise gaps */
+    position: relative;
+    z-index: 5; /* Reverse z-index to hide slight margin overlaps during animation */
+    transition: width 500ms var(--bezier-easeOutExpo);
+}
+
+.scr-banner-imgs-item img {
+    all: unset;
+
+    height: var(--scr-banner-inner-height);
+    opacity: 0;
+    /* Vertical offset + deskew: */
+    transform: skew(calc(-1 * var(--scr-banner-skew))) translate(0, var(--scr-banner-offset-y));
+    animation: scr-banner-anim-fade 600ms forwards var(--bezier-easeInOutQuint) var(--scr-banner-anim-offset);
+}
+
+/* Extra wrapper for slide animations */
+.scr-banner-imgs-item div {
+    height: var(--scr-banner-inner-height);
+    animation: scr-banner-anim-slide-x-1 2s forwards var(--bezier-easeOutExpo) var(--scr-banner-anim-offset);
+}
+
+.scr-banner-imgs-item:nth-child(odd) div {
+    animation: scr-banner-anim-slide-x-2 2s forwards var(--bezier-easeOutExpo) var(--scr-banner-anim-offset);
+}
+
+@keyframes scr-banner-anim-fade {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes scr-banner-anim-slide-x-1 {
+    0%   { transform: translate(-100px,-70px); }
+    100% { transform: translate(0,0); }
+}
+
+@keyframes scr-banner-anim-slide-x-2 {
+    0%   { transform: translate(90px,30px); }
+    100% { transform: translate(0,0); }
+}
+
+.scr-banner-imgs-item:nth-of-type(2) {
+    --scr-banner-imgs-item-no: 2;
+    z-index: 4;
+}
+
+.scr-banner-imgs-item:nth-of-type(3) {
+    --scr-banner-imgs-item-no: 3;
+    z-index: 3;
+}
+
+.scr-banner-imgs-item:nth-of-type(4) {
+    --scr-banner-imgs-item-no: 4;
+    z-index: 2;
+}
+
+.scr-banner-imgs-item:nth-of-type(5) {
+    --scr-banner-imgs-item-no: 5;
+    z-index: 1;
+}
+
+/* Example overlay container that can be used for text/etc */
+.scr-banner-heading {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 2em;
+    text-shadow: 0 2px 3px hsla(0,0%,0%,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 6; /* set above highest image container z-index */
+}
+
+
+/* --------------------------- Media queries --------------------------- */
+
+@media only screen and (max-width: 1200px) {
+
+    /* Image to hide when reaching a narrower width */
+    .scr-banner-imgs-item:nth-child(4) {
+        width: 0;
+    }
+
+    /* Adjust animation timing of subsequent image(s) */
+    .scr-banner-imgs-item:nth-child(5) {
+        --scr-banner-anim-offset: calc(250ms * (var(--scr-banner-imgs-item-no) - 2));
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+
+    .scr-banner-imgs-item:nth-child(2) {
+        width: 0;
+    }
+
+    .scr-banner-imgs-item:nth-child(3) {
+        --scr-banner-anim-offset: calc(250ms * (var(--scr-banner-imgs-item-no) - 2));
+    }
+
+    .scr-banner-imgs-item:nth-child(5) {
+        --scr-banner-anim-offset: calc(250ms * (var(--scr-banner-imgs-item-no) - 3));
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+    .scr-banner-imgs-item:nth-child(5) {
+        width: 0;
+    }
+
+}
