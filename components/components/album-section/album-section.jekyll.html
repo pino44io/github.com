@@ -1,0 +1,32 @@
+<!-- begin albums -->
+<section class="section albums" id="albums">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="contaniner__inner animate">
+
+          <div class="section__info">
+            <div class="section__head">
+              <h2 class="section__title">{{ include.title }}</h2>
+              <a class="section__link" href="{{ include.link_url }}">View all <i class="ion ion-md-arrow-forward"></i></a>
+            </div>
+            <div class="section__description">{{ include.description_html }}</div>
+          </div>
+
+          {% if include.show_albums %}
+          {% assign ordered-albums = site.albums | reverse %}
+          <div class="row">
+            {% for album in ordered-albums %}
+              {% if forloop.index <= 3 %}
+                {% bookshop album-card album=album %}
+              {% endif %}
+            {% endfor %}
+          </div>
+          {% endif %}
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end album -->
