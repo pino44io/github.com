@@ -21,7 +21,7 @@ layout: default
   <img loading="lazy" style="object-position: 0 {{page.banner-offset}}%;" src="{% if ar < 1 %} {{ banner-pic.imageFull-link }} {% else %} {{ banner-pic.image1080-link }} {% endif %}" alt="{{ page.title }}">
   <div class="album-title"><strong>{{ page.title }}</strong></div>
   <div class="album-description">
-    <span class="date"><time datetime="{{ page.date | date_to_xmlschema }}"><strong>{{ page.date | date_to_string}}</strong></time></span>
+    <span class="date"><time datetime="{{ page.date | date_to_xmlschema }}"><strong>{{ page.date | date_to_string}}</strong></time>{% if page.developer %} | {{page.developer}} {% endif %}</span> 
   </div>
 </div>
 
