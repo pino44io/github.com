@@ -103,7 +103,7 @@
       '  transition: transform .7s ease;' +
       '}' +
       '.' + classPrefix + '-figure img:hover {' +
-      '  transform: scale(1.1);' +
+      '  transform: scale(1.05);' +
       '}' +
       '.' + classPrefix + '-figure img.' + classPrefix + '-thumbnail {' +
       '  -webkit-filter: blur(30px);' +
