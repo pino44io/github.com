@@ -15,8 +15,10 @@ layout: default
   {% assign banner-pic = site.data.virtual-photography[page.slug][page.card-image] %}
 {% endif %}
 
+{% assign ar = banner-pic.aspect-ratio | plus: 0 %}
+
 <div class="album-banner">
-  <img loading="lazy" style="object-position: 0 {{page.banner-offset}}%;" src="{{ banner-pic.imageFull-link }}" alt="{{ page.title }}">
+  <img loading="lazy" style="object-position: 0 {{page.banner-offset}}%;" src="{% if ar < 1 %} {{ banner-pic.imageFull-link }} {% else %} {{ banner-pic.image1080-link }} {% endif %}" alt="{{ page.title }}">
   <div class="album-title"><strong>{{ page.title }}</strong></div>
   <div class="album-description">
     <span class="date"><time datetime="{{ page.date | date_to_xmlschema }}"><strong>{{ page.date | date_to_string}}</strong></time></span>
