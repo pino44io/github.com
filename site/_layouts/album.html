@@ -7,23 +7,32 @@ layout: default
     .image-gallery a {float: left; display: block; margin: 0 0 1% 1%; width: 19%; text-align: center; text-decoration: none!important;}
     .image-gallery a span {display: block; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; padding: 3px 0;}
     .image-gallery a img {width: 100%; display: block;}
-  </style>
+ </style>
+
+{% if page.banner-image %}
+  {% assign banner-pic = site.data.virtual-photography[page.slug][page.banner-image] %}
+{% else %}
+  {% assign banner-pic = site.data.virtual-photography[page.slug][page.card-image] %}
+{% endif %}
+
+<div class="album-banner">
+  <img loading="lazy" style="object-position: 0 {{page.banner-offset}}%;" src="{{ banner-pic.imageFull-link }}" alt="{{ page.title }}">
+  <div class="album-title"><strong>{{ page.title }}</strong></div>
+  <div class="album-description">
+    <span class="date"><time datetime="{{ page.date | date_to_xmlschema }}"><strong>{{ page.date | date_to_string}}</strong></time></span>
+  </div>
+</div>
 
 {% assign c = "c-page-heading" %}
   <!-- Page heading from page-heading.jekyll.html-->
+  {% if page.description %}
   <div class="container">
     <div class="{{c}}">
-      {% if page.title %}
-        <h1 class="{{c}}__title">{{ page.title }}</h1>
-      {% endif %}
-      <span class="date"><time datetime="{{ page.date | date_to_xmlschema }}"><strong>{{ page.date | date_to_string}}</strong></time></span>
-      {% if page.description %}
         <p class="{{c}}__description">{{ page.description }}</p>
-      {% endif %}
     </div>
   </div>
+  {% endif %}
   <!-- Finish page heading-->
-  <hr>
 
   
   <div class="pig-wrapper">
