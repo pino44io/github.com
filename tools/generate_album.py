@@ -4,9 +4,7 @@ import sys
 import json
 from dotenv import load_dotenv
 import time
-
-
-import code
+import discord
 
 def file_name_without_file_extension(file_name):
     return os.path.splitext(file_name)[0]
@@ -47,9 +45,6 @@ def createthumbnail(file_path, size):
 
         return saved_filename
 
-
-#code.interact(local=locals())
-
 async def generate_album(directory_name):
     album = []
     for dirpath,_,filenames in os.walk(directory_name):
@@ -73,16 +68,6 @@ async def generate_album(directory_name):
     with open(directory_name + '.json', 'w') as f:
         json.dump(album, f, indent=4)
 
-"""
-async def upload_pic(file_name):
-    thumbnail= await dumpchannel.send(file=discord.File('thumbnailtemp.jpg'))
-    return thumbnail.attachments[0].url
-"""
-
-
-
-
-import discord
 
 intents = discord.Intents.default()
 bot = discord.Client(intents=intents)
@@ -102,12 +87,10 @@ async def on_ready():
 
 def _get_upload_channel():
     for g in bot.guilds:
-        if g.name== 'BotTest':
-            return discord.utils.get(g.channels, name="dump-test")
+        if g.name == DISCORD_SERVER:
+            return discord.utils.get(g.channels, name=DISCORD_CHANNEL)
 
 async def upload_shot(file_name):
-    #return file_name + "discord-url"
-
     dump_channel = _get_upload_channel()
 
     uploaded_shot = await dump_channel.send(file=discord.File(file_name))
@@ -115,6 +98,8 @@ async def upload_shot(file_name):
 
 
 load_dotenv()
-TOKEN = os.getenv('DISCORD_TOKEN')
+DISCORD_TOKEN = os.getenv('DISCORD_TOKEN')
+DISCORD_SERVER = os.getenv('DISCORD_SERVER')
+DISCORD_CHANNEL = os.getenv('DISCORD_CHANNEL')
 
-bot.run(TOKEN)
+bot.run(DISCORD_TOKEN)
