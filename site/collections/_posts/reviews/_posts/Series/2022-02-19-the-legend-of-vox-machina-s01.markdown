@@ -19,7 +19,7 @@ El arco de Pike también estuvo muy interesante.
 
 Las actuaciones de voz obviamente alucinantes. Un par que no resaltaban mucho pero era entendible por que estaban rodeados de talento.
 
-Algo que no me convence mucho es la cantidad de bola que le dan al sexo. Tipo si es algo orgánico bueno qsy, pero era medio bizzarro como lo ponían en todos lados. onda 3 de los 6 protagonistas son bisexuales?
+Algo que no me convence mucho es la cantidad de bola que le dan al sexo. Tipo si es algo orgánico bueno qsy, pero era medio bizzarro como lo ponían en todos lados.
 
 ¿Medio gastado el recurso de los personajes peleando entre ellos? El final hubiera tenido más impacto de no haberse usado antes creo.
 
