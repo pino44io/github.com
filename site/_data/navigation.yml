@@ -1,5 +1,5 @@
-logo_image: '/images/corgi.png' # You can add own logo. For example '/images/logo.png'.
-logo_image_review: '/images/pcorgi.png' # You can add own logo. For example '/images/logo.png'.
+logo_image: '/images/corgi.jpg' # You can add own logo. For example '/images/logo.png'.
+logo_image_review: '/images/pcorgi.jpg' # You can add own logo. For example '/images/logo.png'.
 
 menu__settings:
   menu__items:
