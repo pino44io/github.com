@@ -1,4 +1,6 @@
 <head>
+  {% include google-analytics.html %}
+  
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,8 +9,6 @@
   <meta name='description' content='{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.data.general_settings.description }}{% endif %}'>
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-
-  {% include google-analytics.html %}
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
