@@ -68,11 +68,11 @@
 
 
 	@media only screen and (max-width: $tablet) {
-		font-size: 38px;
+		font-size: 34px;
 	}
 
 	@media only screen and (max-width: $mobile) {
-		font-size: 32px;
+		font-size: 28px;
 	}
 }
 
@@ -88,10 +88,11 @@
 	align-self: flex-end;
 
 	@media only screen and (max-width: $tablet) {
+		font-size: 16px;
 	}
 
 	@media only screen and (max-width: $mobile) {
-		font-size: 20px;
+		font-size: 14px;
 	}
 }
 
