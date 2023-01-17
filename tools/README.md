@@ -2,7 +2,7 @@
 
 This site is using discord to host its albums.
 
-To facilitate the process I create this script to upload folders of images to a dump discord channel/server, while also generating thumbnails for different sizes according to what the albums grid need, getting the AR of the shot for the mentioned grid, and creating a json file to easily use it on the Jekyll site.
+To facilitate the process I created this script to upload folders of images to a dump discord channel/server, while also generating thumbnails for different sizes according to what the albums grid need, getting the AR of the shot for the mentioned grid, and creating a json file to easily use it on the Jekyll site.
 
 To use this simply create a .env file with the following env variables:
 - `DISCORD_TOKEN`: the discord bot's token.
