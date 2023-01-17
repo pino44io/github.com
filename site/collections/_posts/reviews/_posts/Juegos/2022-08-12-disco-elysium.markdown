@@ -1,12 +1,11 @@
 ---
 date:   2022-08-12 12:00:00
 title:  Disco Elysium
+description: "El juego donde todos, hasta los vagabundos, tienen mejor léxico y prosa que vos."
 tags:   [disco-elysium, ]
 image:  '/images/reviews/disco-elysium.jpg'
 category: [el-corgi-pretencioso, juego]
 ---
-El juego donde todo hasta los vagabundos tienen mejor léxico y prosa que vos.
-
 No voy a intentar condensar todo lo que el juego tiene para decir, varias personas mucho más inteligentes que yo han realizado dichos análisis ya (recomiendo en particular el de Noah Caldwell-Gervais), pero voy a intentar hablar un poco sobre lo que disfrute, lo que me pareció medio flojo, y por qué Disco Elysium es el mejor libro que jugue.
 
 Primero lo más importante, la prosa. Esta y la escritura es de las mejores que he visto en los últimos años, lejos. El escritor al parecer escribió un libro antes (dentro del mismo universo del juego encima) por lo cual no es ajeno a la idea de mantener al lector enganchado con diálogo corto e interesante. No solo eso, sino que tomó en consideración la interfaz para mantener al jugador enganchado en lo que se lee, mecánica con la cual el juego gira alrededor.
