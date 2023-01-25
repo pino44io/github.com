@@ -1,5 +1,5 @@
 ---
-date:   2021-09-01 12:00:00
+date:   2021-09-01
 title:  "Halo 2"
 tags:   [halo, ]
 image:  '/images/reviews/halo-2.jpg'

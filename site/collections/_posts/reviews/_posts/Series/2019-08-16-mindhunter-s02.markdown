@@ -1,5 +1,5 @@
 ---
-date:   2019-08-16 12:00:00
+date:   2019-08-16
 title:  "Mindhunter S02"
 tags:   [mindhunter]
 image:  '/images/reviews/mindhunter-s02.jpg'

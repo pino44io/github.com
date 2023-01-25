@@ -1,5 +1,5 @@
 ---
-date:   2022-08-12 12:00:00
+date:   2022-08-12
 title:  Disco Elysium
 description: "El juego donde todos, hasta los vagabundos, tienen mejor léxico y prosa que vos."
 tags:   [disco-elysium, ]

@@ -1,5 +1,5 @@
 ---
-date:   2021-08-04 12:00:00
+date:   2021-08-04
 title:  "Blur"
 image:  '/images/reviews/blur.jpg'
 category: [el-corgi-pretencioso, juego]

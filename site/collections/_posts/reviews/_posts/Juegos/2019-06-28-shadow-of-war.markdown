@@ -1,5 +1,5 @@
 ---
-date:   2019-06-28 12:00:00
+date:   2019-06-28
 title:  "Shadow of War"
 image:  '/images/reviews/shadow-of-war.jpg'
 category: [el-corgi-pretencioso, juego]

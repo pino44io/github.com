@@ -1,5 +1,5 @@
 ---
-date:   2020-06-27 12:00:00
+date:   2020-06-27
 title:  "Dark S03"
 image:  '/images/reviews/dark-s03.jpg'
 category: [el-corgi-pretencioso, serie]

@@ -1,5 +1,5 @@
 ---
-date:   2020-11-14 12:00:00
+date:   2020-11-14
 title:  "Dawnshard"
 tags:   [cosmere]
 image:  '/images/reviews/dawnshard.jpg'

@@ -1,5 +1,5 @@
 ---
-date:   2019-09-06 12:00:00
+date:   2019-09-06
 title:  "It: Chapter Two"
 image:  '/images/reviews/it-chapter-two.jpg'
 category: [el-corgi-pretencioso, pelicula]

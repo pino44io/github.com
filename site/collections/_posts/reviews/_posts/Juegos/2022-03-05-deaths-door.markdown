@@ -1,5 +1,5 @@
 ---
-date:   2022-03-05 12:00:00
+date:   2022-03-05
 title:  Death's Door
 image:  '/images/reviews/deaths-door.jpg'
 category: [el-corgi-pretencioso, juego]

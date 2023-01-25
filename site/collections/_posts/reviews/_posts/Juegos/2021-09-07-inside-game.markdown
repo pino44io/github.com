@@ -1,5 +1,5 @@
 ---
-date:   2021-09-07 12:00:00
+date:   2021-09-07
 title:  "Inside"
 image:  '/images/reviews/inside-game.jpg'
 category: [el-corgi-pretencioso, juego]

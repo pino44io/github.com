@@ -1,5 +1,5 @@
 ---
-date:   2022-10-25 12:00:00
+date:   2022-10-25
 title:  House of the Dragon S01
 tags:   [house-of-the-dragon, spoilers-parciales]
 image:  '/images/reviews/house_of_the_dragon_s01.jpg'

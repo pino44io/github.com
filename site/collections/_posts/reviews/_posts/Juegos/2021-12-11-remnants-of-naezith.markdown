@@ -1,5 +1,5 @@
 ---
-date:   2021-12-11 12:00:00
+date:   2021-12-11
 title:  "Remnants of Naezith"
 image:  '/images/reviews/remnants-of-naezith.jpg'
 category: [el-corgi-pretencioso, juego]

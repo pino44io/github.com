@@ -1,5 +1,5 @@
 ---
-date:   2022-01-22 12:00:00
+date:   2022-01-22
 title:  Flinthook
 image:  '/images/reviews/flinthook.jpg'
 category: [el-corgi-pretencioso, juego]

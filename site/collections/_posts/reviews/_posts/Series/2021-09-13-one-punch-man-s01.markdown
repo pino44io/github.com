@@ -1,5 +1,5 @@
 ---
-date:   2021-09-13 12:00:00
+date:   2021-09-13
 title:  One Punch Man S01
 tags:   [one-punch-man]
 image-card: '/images/reviews/one-punch-man-s01-card.jpg'

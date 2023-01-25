@@ -1,5 +1,5 @@
 ---
-date:   2023-01-22 12:00:00
+date:   2023-01-22
 title:  Far Cry 3
 tags:   [far-cry, spoilers]
 image:  '/images/reviews/far-cry-3.jpg'

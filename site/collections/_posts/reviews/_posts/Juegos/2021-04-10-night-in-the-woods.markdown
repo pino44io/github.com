@@ -1,5 +1,5 @@
 ---
-date:   2021-04-10 12:00:00
+date:   2021-04-10
 title:  "Night in the woods"
 image:  '/images/reviews/night-in-the-woods.jpg'
 category: [el-corgi-pretencioso, juego]

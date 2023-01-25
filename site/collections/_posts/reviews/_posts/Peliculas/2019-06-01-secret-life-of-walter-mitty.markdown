@@ -1,5 +1,5 @@
 ---
-date:   2019-06-01 12:00:00
+date:   2019-06-01
 title:  "The Secret Life of Walter Mitty"
 image:  '/images/reviews/secret-life-of-walter-mitty.jpg'
 category: [el-corgi-pretencioso, pelicula]

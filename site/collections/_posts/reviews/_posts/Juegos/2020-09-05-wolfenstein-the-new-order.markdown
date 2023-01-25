@@ -1,5 +1,5 @@
 ---
-date:   2020-09-05 12:00:00
+date:   2020-09-05
 title:  "Wolfenstein: The New Order"
 tags:   [wolfenstein, ]
 image:  '/images/reviews/wolfenstein-the-new-order.jpg'

@@ -1,5 +1,5 @@
 ---
-date:   2020-06-16 12:00:00
+date:   2020-06-16
 title:  "Batman: Arkham City"
 tags:   [batman, ]
 image:  '/images/reviews/batman-arkham-city.jpg'

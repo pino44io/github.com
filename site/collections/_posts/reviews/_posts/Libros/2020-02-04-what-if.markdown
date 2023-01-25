@@ -1,5 +1,5 @@
 ---
-date:   2020-02-04 12:00:00
+date:   2020-02-04
 title:  "What if?"
 image:  '/images/reviews/what-if.jpg'
 category: [el-corgi-pretencioso, libro]

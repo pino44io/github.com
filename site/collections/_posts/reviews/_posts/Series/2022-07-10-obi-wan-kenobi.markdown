@@ -1,5 +1,5 @@
 ---
-date:   2022-07-10 12:00:00
+date:   2022-07-10
 title:  Obi Wan Kenobi
 description: Consumo fan service y no me importa.
 tags:   [obi-wan-kenobi, star-wars, spoilers]

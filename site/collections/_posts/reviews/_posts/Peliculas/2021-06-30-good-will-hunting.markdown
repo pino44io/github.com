@@ -1,5 +1,5 @@
 ---
-date:   2021-06-30 12:00:00
+date:   2021-06-30
 title:  "Good Will Gunting"
 image:  '/images/reviews/good-will-hunting.jpg'
 category: [el-corgi-pretencioso, pelicula]

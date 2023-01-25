@@ -1,5 +1,5 @@
 ---
-date:   2021-04-04 12:00:00
+date:   2021-04-04
 title:  "Mass Effect: Andromeda"
 tags:   [mass-effect, ]
 image:  '/images/reviews/mass-effect-andromeda.jpg'

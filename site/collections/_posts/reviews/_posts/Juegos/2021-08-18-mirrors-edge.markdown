@@ -1,5 +1,5 @@
 ---
-date:   2021-08-18 12:00:00
+date:   2021-08-18
 title:  "Mirror's Edge"
 tags:   [mirror's-edge, ]
 image:  '/images/reviews/mirrors-edge.jpg'

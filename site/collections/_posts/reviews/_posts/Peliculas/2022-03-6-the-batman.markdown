@@ -1,5 +1,5 @@
 ---
-date:   2022-03-6 12:00:00
+date:   2022-03-6
 title:  "The Batman"
 description: El murcielago nunca se vio mejor.
 tags:   [batman]

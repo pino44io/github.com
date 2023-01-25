@@ -1,5 +1,5 @@
 ---
-date:   2020-09-04 12:00:00
+date:   2020-09-04
 title:  "The Boys S01"
 tags:   [the-boys]
 image:  '/images/reviews/the-boys-s01.jpg'

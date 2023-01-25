@@ -1,5 +1,5 @@
 ---
-date:   2020-10-14 12:00:00
+date:   2020-10-14
 title:  "Gris"
 image:  '/images/reviews/gris.jpg'
 category: [el-corgi-pretencioso, juego]

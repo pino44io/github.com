@@ -1,5 +1,5 @@
 ---
-date:   2021-08-01 12:00:00
+date:   2021-08-01
 title:  "Inside"
 image:  '/images/reviews/inside.jpeg'
 category: [el-corgi-pretencioso, pelicula]

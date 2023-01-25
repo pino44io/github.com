@@ -1,5 +1,5 @@
 ---
-date:   2022-12-25 12:00:00
+date:   2022-12-25
 title:  "Mistborn: The Lost Metal"
 description: "Cuarta y última entrega de la segunda era de Mistborn."
 image:  '/images/reviews/mistborn-the-lost-metal.jpg'

@@ -1,5 +1,5 @@
 ---
-date:   2021-06-09 12:00:00
+date:   2021-06-09
 title:  "Transistor"
 image:  '/images/reviews/transistor.jpg'
 category: [el-corgi-pretencioso, juego]

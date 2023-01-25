@@ -1,5 +1,5 @@
 ---
-date:   2021-09-18 12:00:00
+date:   2021-09-18
 title:  How we made a high quality image gallery without paying a single dime
 description: A dive into how the poor man's necessity sharpens one's problem solving ability (or how we took advantage of multiple million dollar companies' free services).
 tags:   [programming, project, virtual-photography]

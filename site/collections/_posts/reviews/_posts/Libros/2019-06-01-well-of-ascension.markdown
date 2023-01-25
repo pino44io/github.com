@@ -1,5 +1,5 @@
 ---
-date:   2019-06-01 12:00:00
+date:   2019-06-01
 title:  "The Well of Ascension"
 tags:   [cosmere]
 image:  '/images/reviews/well-of-ascension.jpg'

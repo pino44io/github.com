@@ -1,5 +1,5 @@
 ---
-date:   2021-02-23 12:00:00
+date:   2021-02-23
 title:  "White Sand trilogy"
 tags:   [comic, cosmere]
 image:  '/images/reviews/white-sand.jpg'

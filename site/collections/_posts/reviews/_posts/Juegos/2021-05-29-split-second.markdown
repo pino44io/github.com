@@ -1,5 +1,5 @@
 ---
-date:   2021-06-27 12:00:00
+date:   2021-06-27
 title:  "Split/Second"
 image:  '/images/reviews/split-second.jpg'
 category: [el-corgi-pretencioso, juego]

@@ -1,5 +1,5 @@
 ---
-date:   2021-12-24 12:00:00
+date:   2021-12-24
 title:  The Witcher S02
 tags:   [witcher, spoilers]
 image:  '/images/reviews/witcher-s02.jpg'

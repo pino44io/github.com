@@ -1,5 +1,5 @@
 ---
-date:   2020-05-03 12:00:00
+date:   2020-05-03
 title:  "Elantris"
 tags:   [cosmere]
 image:  '/images/reviews/elantris.jpg'

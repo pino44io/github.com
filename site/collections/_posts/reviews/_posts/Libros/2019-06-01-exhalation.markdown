@@ -1,5 +1,5 @@
 ---
-date:   2019-06-01 12:00:00
+date:   2019-06-01
 title:  "Exhalation"
 image:  '/images/reviews/exhalation.jpg'
 category: [el-corgi-pretencioso, libro]

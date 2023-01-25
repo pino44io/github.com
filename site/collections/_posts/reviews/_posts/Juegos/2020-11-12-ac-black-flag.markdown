@@ -1,5 +1,5 @@
 ---
-date:   2020-11-12 12:00:00
+date:   2020-11-12
 title:  "Assassin's Creed IV: Black Flag"
 tags:   [assassin's-creed, ]
 image:  '/images/reviews/ac-black-flag.jpg'

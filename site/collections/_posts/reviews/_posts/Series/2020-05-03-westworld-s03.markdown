@@ -1,5 +1,5 @@
 ---
-date:   2020-05-03 12:00:00
+date:   2020-05-03
 title:  "Westworld S03"
 image:  '/images/reviews/westworld-s03.jpg'
 category: [el-corgi-pretencioso, serie]

@@ -1,5 +1,5 @@
 ---
-date:   2020-02-05 12:00:00
+date:   2020-02-05
 title:  "Warbreaker"
 tags:   [cosmere]
 image:  '/images/reviews/warbreaker.jpg'

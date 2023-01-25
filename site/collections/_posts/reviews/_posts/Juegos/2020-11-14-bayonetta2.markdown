@@ -1,5 +1,5 @@
 ---
-date:   2020-11-14 12:00:00
+date:   2020-11-14
 title:  "Bayonetta 2"
 tags:   [bayonetta, ]
 image:  '/images/reviews/bayonetta2.jpg'

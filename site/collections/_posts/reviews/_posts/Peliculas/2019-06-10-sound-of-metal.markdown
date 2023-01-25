@@ -1,5 +1,5 @@
 ---
-date:   2019-06-10 12:00:00
+date:   2019-06-10
 title:  "Sound of Metal"
 image:  '/images/reviews/sound-of-metal.jpg'
 category: [el-corgi-pretencioso, pelicula]

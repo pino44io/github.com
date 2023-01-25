@@ -1,5 +1,5 @@
 ---
-date:   2020-08-02 12:00:00
+date:   2020-08-02
 title:  "Halo: Combat Evolved Anniversary"
 tags:   [halo, ]
 image:  '/images/reviews/halo-combat-evolved.jpg'

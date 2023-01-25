@@ -1,5 +1,5 @@
 ---
-date:   2021-12-17 12:00:00
+date:   2021-12-17
 title:  "Forza Horizon 5"
 tags:   [forza-horizon, ]
 image:  '/images/reviews/forza-horizon-5.jpg'

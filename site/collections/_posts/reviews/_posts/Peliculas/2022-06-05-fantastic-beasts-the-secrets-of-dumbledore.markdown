@@ -1,5 +1,5 @@
 ---
-date:   2022-06-05 12:00:00
+date:   2022-06-05
 title:  "Fantastic Beasts: The Secrets of Dumbledore"
 tags:   [fantastic-beasts, harry-potter]
 image:  '/images/reviews/fantastic-beasts-the-secrets-of-dumbledore.jpg'

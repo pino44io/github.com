@@ -1,5 +1,5 @@
 ---
-date:   2021-06-11 12:00:00
+date:   2021-06-11
 title:  "Monster Hunter Freedom Unite"
 tags:   [monster-hunter, ]
 image:  '/images/reviews/monster-hunter-freedom-unite.jpg'

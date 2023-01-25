@@ -1,5 +1,5 @@
 ---
-date:   2022-01-28 12:00:00
+date:   2022-01-28
 title:  "Bulletstorm: Full Clip Edition"
 image:  '/images/reviews/bulletstorm.png'
 category: [el-corgi-pretencioso, juego]

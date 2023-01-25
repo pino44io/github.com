@@ -1,5 +1,5 @@
 ---
-date:   2020-06-26 12:00:00
+date:   2020-06-26
 title:  "Death’s Gambit"
 image:  '/images/reviews/deaths-gambit.jpg'
 category: [el-corgi-pretencioso, juego]

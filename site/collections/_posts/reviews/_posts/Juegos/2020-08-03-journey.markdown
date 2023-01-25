@@ -1,5 +1,5 @@
 ---
-date:   2020-08-03 12:00:00
+date:   2020-08-03
 title:  "Journey"
 image:  '/images/reviews/journey.png'
 category: [el-corgi-pretencioso, juego]

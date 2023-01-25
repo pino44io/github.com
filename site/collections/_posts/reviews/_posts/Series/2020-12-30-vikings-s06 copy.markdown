@@ -1,5 +1,5 @@
 ---
-date:   2020-12-30 12:00:00
+date:   2020-12-30
 title:  "Vikings S06"
 tags:   [vikings]
 image:  '/images/reviews/vikings-s06.jpg'

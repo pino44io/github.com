@@ -1,5 +1,5 @@
 ---
-date:   2021-04-08 12:00:00
+date:   2021-04-08
 title:  "Cowboy Bebop"
 image:  '/images/reviews/cowboy-bebop.jpg'
 category: [el-corgi-pretencioso, serie]

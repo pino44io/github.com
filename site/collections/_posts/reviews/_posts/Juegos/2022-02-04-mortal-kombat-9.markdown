@@ -1,5 +1,5 @@
 ---
-date:   2022-02-04 12:00:00
+date:   2022-02-04
 title:  Mortal Kombat 9
 tags:   [mortal-kombat, ]
 image:  '/images/reviews/mortal-kombat-9.jpg'

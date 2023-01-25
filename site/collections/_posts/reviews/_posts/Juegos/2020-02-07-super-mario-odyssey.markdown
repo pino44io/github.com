@@ -1,5 +1,5 @@
 ---
-date:   2020-02-07 12:00:00
+date:   2020-02-07
 title:  "Super Mario Odyssey"
 tags:   [mario, ]
 image:  '/images/reviews/super-mario-odyssey.jpg'

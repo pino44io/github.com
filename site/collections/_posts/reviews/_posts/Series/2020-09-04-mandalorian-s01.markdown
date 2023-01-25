@@ -1,5 +1,5 @@
 ---
-date:   2020-09-04 12:00:00
+date:   2020-09-04
 title:  "The Mandalorian S01"
 tags:   [star-wars]
 image:  '/images/reviews/mandalorian-s01.jpg'

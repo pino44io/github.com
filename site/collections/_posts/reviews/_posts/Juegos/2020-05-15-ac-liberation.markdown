@@ -1,5 +1,5 @@
 ---
-date:   2020-05-15 12:00:00
+date:   2020-05-15
 title:  "Assassin's Creed - Liberation HD"
 tags:   [assassin's-creed, ]
 image:  '/images/reviews/ac-liberation.jpg'

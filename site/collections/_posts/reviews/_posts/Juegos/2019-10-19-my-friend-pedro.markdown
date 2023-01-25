@@ -1,5 +1,5 @@
 ---
-date:   2019-10-19 12:00:00
+date:   2019-10-19
 title:  "My Friend Pedro"
 image:  '/images/reviews/my-friend-pedro.jpg'
 category: [el-corgi-pretencioso, juego]
