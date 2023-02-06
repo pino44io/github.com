@@ -1,7 +1,7 @@
 ---
 date:   2023-02-06
 title:  How to create and host your own portfolio for free
-description:
+description: Need a website in which to show your work, have total control over it, and don't have to pay anything to make or host (besides your sanity)? Say no more!
 tags:   [project, virtual-photography]
 image:  '/images/blog/post-2.jpg'
 category: blog
@@ -359,8 +359,8 @@ There is more stuff that you may want to do to improve your site even further. M
 
 <hr>
 
-And that's all! I apologize if trying to make this work (or reading the guide itself) gave you some headaches. Hope you enjoyed reading this and got something useful out of it :D.
+And that's all! I apologize if trying to make this work (or reading the guide itself) gave you some headaches. Hope you enjoyed reading this and got something useful out of it c:
 
-If you have any questions don't hesitate to hit me up. Also if you happen to create a site using this please comment here! Would love to see it!
+If you have any questions don't hesitate to hit me up. Also if you happen to create a site using this please leave it in the comments here! Would love to see it!
 
 {% endraw %}
