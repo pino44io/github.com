@@ -1,6 +1,7 @@
 ---
 date:   2023-04-30
 title:  "Avatar: The Way of Water"
+description: El lugar de los temas profundos en blockbusters, un guión medio escueto y los pitufos crecidos más lindos hasta la fecha.
 tags:   [spoilers]
 image:  '/images/reviews/avatar-the-way-of-water.jpg'
 category: [el-corgi-pretencioso, pelicula]
