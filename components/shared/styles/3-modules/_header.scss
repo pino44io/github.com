@@ -55,7 +55,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  margin-left: 100px;
+  //margin-left: 100px;
 
   .social {
     margin-left: auto;
@@ -65,6 +65,22 @@
       vertical-align: middle;
     }
   }
+
+  
+  .dark-mode-button {
+    margin: 3px 30px 0px;
+    padding: 5px;
+
+    @media only screen and (max-width: $mobile) {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 5px 25px;
+      margin: 0;
+      font-size: 35px;
+    }
+  }
+  
 
   @media only screen and (max-width: $desktop) {
     position: fixed;
