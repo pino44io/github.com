@@ -1,5 +1,5 @@
 ---
-date:   2023-07-04
+date:   2023-07-16
 title:  "The Legend of Zelda: Tears of the Kingdom"
 description: El estado de flow en la narrativa, la creatividad como mecánica, y la felicidad de jugar Breath of the Wild por primera vez de nuevo.
 tags:   [ensayo]
