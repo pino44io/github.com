@@ -250,7 +250,7 @@ En particular no me molestó que {% include spoiler.html content="te haya dejado
 
 El hecho de que {% include spoiler.html content="Zelda nos salve y ayude a pelear contra Ganon en la tercera fase nos da a entender que no se había perdido completamente en su forma dracónica, como tanto afirmaban las memorias que encontramos." %} Buen foreshadowing supongo para lo que sucede después. 
 
-No estoy seguro si me gusta el hecho de que {% include spoiler.html content="hayan convertido a Zelda en humano de nuevo. La conversión a dragón y lo inevitable de esta pega muy duro emocionalmente cuando nos enteramos, por lo cual siento que al volverla humano se pierde un poco de peso en su sacrificio." %} Pero estoy dispuesto a dejarlo pasar por el momentazo que surge a partir de esto.
+No estoy seguro si me gusta el hecho de que {% include spoiler.html content="hayan convertido a Zelda en humana de nuevo. La conversión a dragón y lo inevitable de esta pega muy duro emocionalmente cuando nos enteramos, por lo cual siento que al volverla humana se pierde un poco de peso en su sacrificio." %} Pero estoy dispuesto a dejarlo pasar por el momentazo que surge a partir de esto.
 
 ![AAAAAAAAAAAAAAAAA](/images/reviews/zelda-totk/zelda-14.jpg)
 
