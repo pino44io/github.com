@@ -2,7 +2,7 @@
 date:   2023-07-16
 title:  "The Legend of Zelda: Tears of the Kingdom"
 description: El estado de flow en la narrativa, la creatividad como mecánica, y la felicidad de jugar Breath of the Wild por primera vez de nuevo.
-tags:   [ensayo]
+tags:   [ensayo, spoilers-parciales]
 image:  '/images/reviews/zelda-totk-essay.jpg'
 image-card: '/images/reviews/zelda-totk-essay-card.jpg'
 category: [el-corgi-pretencioso, juego]
