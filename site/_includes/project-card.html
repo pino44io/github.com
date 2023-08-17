@@ -11,5 +11,10 @@
       </div>
     </div>
   </div>
-  <div class="project-tags">{{ include.project_tags }}</div>
+  <div class="project-footer">
+    {% if include.project_extra_link %}
+      <!-- <a href={{ include.project_extra_link }} class="project-extra-link">{{ include.project_extra_link_description }}</a> -->
+    {% endif %}
+    <div class="project-tags">{{ include.project_tags }}</div>
+  </div>
 </a>

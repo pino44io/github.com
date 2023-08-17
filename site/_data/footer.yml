@@ -4,6 +4,8 @@ footer_menu__settings:
       url: '/'
     - title: 'Blog'
       url: '/blog/'
+    - title: 'Projects'
+      url: '/projects/'
     - title: 'Virtual Photography'
       url: '/virtual-photography/'
     - title: 'About'
