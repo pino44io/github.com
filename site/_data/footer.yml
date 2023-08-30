@@ -4,8 +4,8 @@ footer_menu__settings:
       url: '/'
     - title: 'Virtual Photography'
       url: '/virtual-photography/'
-    - title: 'Art'
-      url: '/art/'
+    - title: 'Artworks'
+      url: '/artworks/'
     - title: 'About'
       url: '/about/'
 
