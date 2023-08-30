@@ -1,13 +1,5 @@
 {% if include.show_albums %}
 
-<div class="album-order-wrapper">
- <strong>Album order</strong>
-  <div class="album-order-options">
-    <a href="/virtual-photography" class="album-order-selector{% if page.url == '/virtual-photography/' %} active-link{% endif %}"><strong>Alphabetically</strong></a>
-    <a href="/virtual-photography-new" class="album-order-selector{% if page.url == '/virtual-photography-new/' %} active-link{% endif %}"><strong>Date</strong></a>
-  </div>
-</div>
-
 <div class="container animate">
   <div class="row">
     {%if page.url contains "virtual-photography-new" %}
