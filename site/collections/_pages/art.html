@@ -1,0 +1,53 @@
+---
+title: Art
+content_blocks:
+  - _bookshop_name: page-heading
+description:
+---
+
+<!--  "Want to make a commission? Feel free to take a look at my <a href="https://boosty.to/pino44io" target="_blank" rel="noopener">price list at my Boosty</a> and <a href="mailto:pino28kkio@gmail.com" target="_blank" rel="noopener">drop me an email</a> if you are interested."-->
+
+{% bookshop page-heading title="Art" %}
+
+
+{% assign c = "c-page-heading" %}
+<!-- Page heading from page-heading.jekyll.html-->
+{% if page.description %}
+<div class="container">
+  <div class="{{c}}">
+      <p class="{{c}}__description">{{ page.description }}</p>
+  </div>
+</div>
+{% endif %}
+<!-- Finish page heading-->
+
+
+<div class="pig-wrapper">
+    <div id="pig"></div>
+</div>
+<script type="text/javascript" src="../../js/album/pig.js"></script>
+<script type="text/javascript">
+  var imageData = [
+  {% for image in site.data.art %}
+      {"thumbnail":"{{ image.thumbnail-link }}", "image1080":"{{ image.image1080-link }}", "imageFull":"{{ image.imageFull-link }}", "aspectRatio":{{ image.aspect-ratio }}},
+  {% endfor %}
+  ];
+  var pig = new Pig(imageData, {
+  urlForSize: function(imageUrls, sizewidth) {
+    if (sizewidth <= 1080){
+      return imageUrls.thumbnail;
+    }
+    else if(sizewidth <= 1920){
+      return imageUrls.image1080;
+    }
+    return imageUrls.imageFull;
+  },
+  addAnchorTag: true,
+  anchorTargetDir: "",
+  anchorClass: "swipebox"
+  }).enable();
+  ;( function( $ ) {
+  $( '.swipebox' ).swipebox();
+  } )( jQuery );
+</script>
+

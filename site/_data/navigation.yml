@@ -7,5 +7,7 @@ menu__settings:
       url: '/'
     - title: 'Virtual Photography'
       url: '/virtual-photography/'
+    - title: 'Art'
+      url: '/art/'
     - title: 'About'
       url: '/about/'
