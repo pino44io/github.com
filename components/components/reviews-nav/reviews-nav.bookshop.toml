@@ -1,6 +1,0 @@
-[component]
-structures = [ "content_blocks" ]
-label = "Reviews nav"
-description = "Navigation buttons for the reviews page."
-icon = "wysiwyg"
-tags = ["Collections"]

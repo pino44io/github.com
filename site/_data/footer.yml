@@ -2,15 +2,11 @@ footer_menu__settings:
   menu__items:
     - title: 'Home'
       url: '/'
-    - title: 'Blog'
-      url: '/blog/'
-    - title: 'Projects'
-      url: '/projects/'
     - title: 'Virtual Photography'
       url: '/virtual-photography/'
     - title: 'About'
       url: '/about/'
 
 copyright_text_html: >-
-  <p>Made with <i class="ion ion-md-heart"></i> and Jekyll.</p>
+  <p>Made by Originalnicodr with <i class="ion ion-md-heart"></i> and Jekyll.</p>
   <p>Template by <a href="https://cloudcannon.com/">CloudCannon</a>.</p>

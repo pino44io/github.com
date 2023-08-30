@@ -1,25 +1,10 @@
-logo_image: '/images/corgi.jpg' # You can add own logo. For example '/images/logo.png'.
-logo_image_review: '/images/pcorgi.jpg' # You can add own logo. For example '/images/logo.png'.
+logo_image: '/images/avatar.jpg' # You can add own logo. For example '/images/logo.png'.
+logo_image_review: '/images/avatar.jpg' # You can add own logo. For example '/images/logo.png'.
 
 menu__settings:
   menu__items:
     - title: 'Home'
       url: '/'
-    - title: 'Blog'
-      url: '/blog/'
-    - title: 'El Corgi Pretencioso'
-      url: '/el-corgi-pretencioso/'
-      submenu:
-      - url: '/el-corgi-pretencioso/juego'
-        title: 'Juegos'
-      - url: '/el-corgi-pretencioso/serie'
-        title: 'Series'
-      - url: '/el-corgi-pretencioso/pelicula'
-        title: 'Peliculas'
-      - url: '/el-corgi-pretencioso/libro'
-        title: 'Libros'
-    - title: 'Projects'
-      url: '/projects/'
     - title: 'Virtual Photography'
       url: '/virtual-photography/'
     - title: 'About'

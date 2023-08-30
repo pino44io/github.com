@@ -1,6 +1,6 @@
-title: Originalnicodr
+title: pino44io
 
-url: "https://originalnicodr.github.io" # the base hostname & protocol for your site
+url: "https://pino44io.github.io" # the base hostname & protocol for your site
 plugins:
   - jekyll-bookshop
   - cloudcannon-jekyll-bookshop

@@ -1,6 +1,5 @@
 <head>
-  {% include google-analytics.html %}
-  
+ 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,10 +11,6 @@
 
   {% if page.url == "/" or page.url == "/blog/" or page.url == "/virtual-photography/" or page.url == "/virtual-photography-new/" or page.url == "/about/" %}
     {% assign social-media-card-image = site.data.general_settings.social_media_share_image | absolute_url %}
-  {% elsif page.url == "/el-corgi-pretencioso/" %}
-    {% assign social-media-card-image = "/images/pcorgi.jpg" | absolute_url %}
-  {% elsif page.url contains "/blog/" or page.url contains "/el-corgi-pretencioso/" %}
-    {% assign social-media-card-image = page.image | absolute_url %}
   {% elsif page.url contains "/virtual-photography/" %}
     {% assign social-media-card-image = site.data.virtual-photography[page.slug][page.card-image].thumbnail-link %}
   {% else %}
