@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: album
 date: 2022-03-05
 title: Gotham Knights
 developer: WB Games Montréal
