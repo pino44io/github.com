@@ -4940,6 +4940,16 @@
   }
 }
 @media all, bookshop {
+  .c-page-heading__description a {
+    font-weight: 500;
+    border-bottom: 1px solid #d5dce3;
+  }
+  .c-page-heading__description a:hover {
+    color: #110E38;
+    border-bottom-color: #110E38;
+  }
+}
+@media all, bookshop {
   .c-page-image {
     position: relative;
     transform: translate(0);
