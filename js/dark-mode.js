@@ -9,9 +9,7 @@ function darkmode() {
   let enabled = localStorage.getItem('dark-mode')
 
   if (enabled === null) {
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        enable();
-    }
+    enable();
   } else if (enabled === 'true') {
     enable()
   }
