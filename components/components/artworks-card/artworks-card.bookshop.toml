@@ -1,0 +1,12 @@
+[component]
+structures = []
+label = "Artworks Card"
+description = "Artworks card used for Artworks lists"
+icon = "wysiwyg"
+tags = []
+
+[props.artwork]
+title = "Hello World"
+subtitle = "Lorem Ipsum"
+image = "https://placekitten.com/800/400"
+url = "/"
