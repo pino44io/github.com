@@ -1,6 +1,6 @@
 ---
 layout: album
-date: 2022-18-11
+date: 2022-11-18
 title: Devil In Me
 developer: Supermassive Games
 card-image: 0
