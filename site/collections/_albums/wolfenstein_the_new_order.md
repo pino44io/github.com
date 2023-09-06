@@ -1,6 +1,6 @@
 ---
 layout: album
-date: 2022-05-20
+date: 2014-05-20
 title: "Wolfenstein: The New Order"
 developer: MachineGames
 card-image: 0
