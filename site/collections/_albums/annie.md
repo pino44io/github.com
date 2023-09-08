@@ -1,7 +1,7 @@
 ---
 layout: album
 date: 2020-04-07
-title: "ANNIE: Last Hope"
+title: "Annie: Last Hope"
 developer: Pixel Rice
 card-image: 0
 card-offset: 0
