@@ -4117,7 +4117,7 @@
     flex: auto;
     flex-direction: column;
     font-size: 26px;
-    margin: 40px auto 10px;
+    margin: 40px auto 25px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -4179,6 +4179,7 @@
 @media all, bookshop {
   .album-order-selector.active-link, .album-order-selector.cc-active {
     color: #f5914f;
+    cursor: default;
   }
   .album-order-selector.active-link::after, .album-order-selector.cc-active::after {
     content: none;
