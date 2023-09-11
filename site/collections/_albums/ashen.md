@@ -2,7 +2,7 @@
 layout: album
 date: 2018-12-07
 title: Ashen
-developer: À44
+developer: A44
 card-image: 0
 card-offset: 0
 banner-image: 0
