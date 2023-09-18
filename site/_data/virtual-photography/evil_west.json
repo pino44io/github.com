@@ -1,0 +1,44 @@
+[
+    {
+        "imageFull-link": "https://cdn.discordapp.com/attachments/1146457896939434128/1153260681123082260/evil_west_01.jpg",
+        "thumbnail-link": "https://cdn.discordapp.com/attachments/1146457896939434128/1153260686835724380/evil_west_01-600.jpg",
+        "image1080-link": "https://cdn.discordapp.com/attachments/1146457896939434128/1153260697992577024/evil_west_01-1080.jpg",
+        "aspect-ratio": "1.0"
+    },
+    {
+        "imageFull-link": "https://cdn.discordapp.com/attachments/1146457896939434128/1153260702652444702/evil_west_02.jpg",
+        "thumbnail-link": "https://cdn.discordapp.com/attachments/1146457896939434128/1153260706326663199/evil_west_02-600.jpg",
+        "image1080-link": "https://cdn.discordapp.com/attachments/1146457896939434128/1153260711343034378/evil_west_02-1080.jpg",
+        "aspect-ratio": "0.75"
+    },
+    {
+        "imageFull-link": "https://cdn.discordapp.com/attachments/1146457896939434128/1153260716590125096/evil_west_03.jpg",
+        "thumbnail-link": "https://cdn.discordapp.com/attachments/1146457896939434128/1153260719924580362/evil_west_03-600.jpg",
+        "image1080-link": "https://cdn.discordapp.com/attachments/1146457896939434128/1153260725796614285/evil_west_03-1080.jpg",
+        "aspect-ratio": "0.75"
+    },
+    {
+        "imageFull-link": "https://cdn.discordapp.com/attachments/1146457896939434128/1153260730930434088/evil_west_04.jpg",
+        "thumbnail-link": "https://cdn.discordapp.com/attachments/1146457896939434128/1153260736521453648/evil_west_04-600.jpg",
+        "image1080-link": "https://cdn.discordapp.com/attachments/1146457896939434128/1153260742217322556/evil_west_04-1080.jpg",
+        "aspect-ratio": "0.75"
+    },
+    {
+        "imageFull-link": "https://cdn.discordapp.com/attachments/1146457896939434128/1153260748605231114/evil_west_05.jpg",
+        "thumbnail-link": "https://cdn.discordapp.com/attachments/1146457896939434128/1153260755152539678/evil_west_05-600.jpg",
+        "image1080-link": "https://cdn.discordapp.com/attachments/1146457896939434128/1153260767139876938/evil_west_05-1080.jpg",
+        "aspect-ratio": "2.3342670401493932"
+    },
+    {
+        "imageFull-link": "https://cdn.discordapp.com/attachments/1146457896939434128/1153260771812311122/evil_west_06.jpg",
+        "thumbnail-link": "https://cdn.discordapp.com/attachments/1146457896939434128/1153260774987419658/evil_west_06-600.jpg",
+        "image1080-link": "https://cdn.discordapp.com/attachments/1146457896939434128/1153260779357868102/evil_west_06-1080.jpg",
+        "aspect-ratio": "0.749611197511664"
+    },
+    {
+        "imageFull-link": "https://cdn.discordapp.com/attachments/1146457896939434128/1153260784252620840/evil_west_07.jpg",
+        "thumbnail-link": "https://cdn.discordapp.com/attachments/1146457896939434128/1153260788467912745/evil_west_07-600.jpg",
+        "image1080-link": "https://cdn.discordapp.com/attachments/1146457896939434128/1153260794201526322/evil_west_07-1080.jpg",
+        "aspect-ratio": "0.75"
+    }
+]
