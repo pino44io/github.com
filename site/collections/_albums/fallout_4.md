@@ -5,6 +5,6 @@ title: Fallout 4
 developer: Bethesda Game Studios
 card-image: 4
 card-offset: 0
-banner-image: 5
+banner-image: 11
 banner-offset: 0
 ---
