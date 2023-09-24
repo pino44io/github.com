@@ -1,4 +1,4 @@
-	---
+---
 layout: album
 date: 2021-01-28
 title: The Medium
